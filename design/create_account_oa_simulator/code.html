@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"success":"#6B9B78","warning":"#E9B95B","border-subtle":"#E9E4DB","error-container":"#ffdad6","surface-container-highest":"#e4e2e1","primary":"#a43d0d","outline":"#8b7269","on-secondary-fixed":"#331200","on-tertiary-fixed-variant":"#5d4200","surface-container":"#f0eded","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3f2","outline-variant":"#dec0b6","on-surface":"#252525","surface-bright":"#FAF7F0","primary-fixed-dim":"#ffb59a","inverse-primary":"#ffb59a","secondary-fixed":"#ffdbc9","tertiary-container":"#c0943a","tertiary":"#7b5800","on-primary-fixed":"#380d00","on-error-container":"#93000a","on-primary":"#ffffff","tertiary-fixed":"#ffdea5","surface-container-high":"#eae7e7","tertiary-fixed-dim":"#f0bf60","error":"#D96C61","on-secondary-container":"#773a10","on-secondary":"#ffffff","surface-variant":"#e4e2e1","on-tertiary-fixed":"#271900","on-error":"#ffffff","on-background":"#252525","on-primary-container":"#5f1d00","on-secondary-fixed-variant":"#72360c","on-surface-variant":"#77736E","secondary-fixed-dim":"#ffb68d","surface":"#FAF7F0","on-tertiary-container":"#442f00","secondary":"#8f4d22","secondary-container":"#F6A16F","on-tertiary":"#ffffff","primary-fixed":"#ffdbcf","inverse-on-surface":"#f3f0ef","background":"#FAF7F0","on-primary-fixed-variant":"#802a00","primary-container":"#f47745","surface-tint":"#a43d0d","inverse-surface":"#303030","surface-dim":"#dcd9d9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"1rem","2xl":"1.5rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",margin:"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-md":"1rem",gutter:"1rem","space-xl":"2.5rem"},fontFamily:{"label-ui":["Plus Jakarta Sans"],"label-code-lg":["JetBrains Mono"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"]},fontSize:{"label-ui":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"label-code-lg":["14px",{lineHeight:"22px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen"><main class="w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="w-full min-h-screen flex flex-col lg:flex-row bg-surface text-on-surface">
+<!-- Left Column: Branded Visual Presentation (Warm Modernism Canvas) -->
+<div class="w-full lg:w-5/12 xl:w-1/2 bg-surface-container-low p-8 lg:p-14 xl:p-20 flex flex-col justify-between relative overflow-hidden">
+<!-- Ambient warm subtle glow -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-secondary-container/15 blur-2xl pointer-events-none"></div>
+<!-- Top Branding -->
+<div class="relative z-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-on-primary text-xl" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">OA Simulator</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-ui text-label-ui uppercase tracking-wider text-[10px]">Student Prep</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calm Precision for High-Stakes Technicals</p>
+</div>
+</div>
+<!-- Main Branded Value Proposition -->
+<div class="mt-14 lg:mt-20 max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest/60 text-secondary font-label-ui text-label-ui mb-5">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            Zero Cold Palettes • Anxiety-Free Environment
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">
+            Begin Your Timed <br class="hidden sm:inline"/>Coding Journey
+          </h1>
+<p class="mt-4 font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Join thousands of students mastering technical assessments. Configure your own challenge sets and conquer interview anxiety with telemetry that empowers your growth.
+          </p>
+</div>
+</div>
+<!-- Stepper Roadmap Card Component -->
+<div class="relative z-10 my-12 lg:my-10">
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-7 shadow-md border border-border-subtle">
+<div class="flex items-center justify-between mb-6">
+<span class="font-label-ui text-label-ui uppercase tracking-wider text-outline font-semibold">Assessment Workflow</span>
+<span class="font-body-sm text-body-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium">3 Simple Steps</span>
+</div>
+<!-- Stepper Item 1 -->
+<div class="relative flex items-start gap-4 pb-7">
+<div class="absolute left-4 top-8 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-code-sm text-label-code-sm font-bold shadow-sm shrink-0 z-10">
+              1
+            </div>
+<div class="flex-1 min-w-0 pt-0.5">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Configure Topics</h4>
+<span class="material-symbols-outlined text-primary text-base">tune</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Dial in Graphs, Dynamic Programming, or Trees matching target company test patterns.
+              </p>
+</div>
+</div>
+<!-- Stepper Item 2 -->
+<div class="relative flex items-start gap-4 pb-7">
+<div class="absolute left-4 top-8 bottom-0 w-0.5 bg-surface-container-highest"></div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-code-sm text-label-code-sm font-bold shadow-sm shrink-0 z-10">
+              2
+            </div>
+<div class="flex-1 min-w-0 pt-0.5">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Timed Python Solve</h4>
+<span class="material-symbols-outlined text-primary text-base">timer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Simulate 70-minute proctored environments with warm IDE comfort and test-case consoles.
+              </p>
+</div>
+</div>
+<!-- Stepper Item 3 -->
+<div class="relative flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-code-sm text-label-code-sm font-bold shrink-0 z-10">
+              3
+            </div>
+<div class="flex-1 min-w-0 pt-0.5">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Rule-Based Insights</h4>
+<span class="material-symbols-outlined text-secondary text-base">insights</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Detailed runtime, memory, and cognitive pattern breakdown immediately upon submission.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Trust Badges / Social Proof -->
+<div class="relative z-10 pt-4 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-[11px] font-bold shadow-sm">AC</div>
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center text-[11px] font-bold shadow-sm">MR</div>
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center text-[11px] font-bold shadow-sm">KL</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Over 14,200 practice sets submitted</span>
+</div>
+<div class="flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-ui text-label-ui">Strict Data Privacy</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Registration Form -->
+<div class="w-full lg:w-7/12 xl:w-1/2 bg-surface p-8 sm:p-12 lg:p-16 xl:p-24 flex items-center justify-center">
+<div class="w-full max-w-lg">
+<!-- Header Info -->
+<div class="mb-8">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-ui text-label-ui mb-3">
+<span>Free Tier</span>
+<span class="text-outline-variant">•</span>
+<span class="text-primary font-semibold">Instant Access</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">Create Student Account</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5">
+            Fast setup — start simulating online assessments in minutes.
+          </p>
+</div>
+<!-- Form Card Container -->
+<form class="space-y-5" onsubmit="event.preventDefault(); validateForm();">
+<!-- Full Name Field -->
+<div>
+<label class="block font-label-ui text-label-ui text-on-surface font-semibold mb-1.5" for="fullName">
+              Full Name
+            </label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-lg">person</span>
+</span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest border border-border-subtle" id="fullName" placeholder="Alex Chen" type="text" value="Alex Chen"/>
+</div>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Used on diagnostic report scorecards and peer comparisons</p>
+</div>
+<!-- Email Address Field -->
+<div>
+<label class="block font-label-ui text-label-ui text-on-surface font-semibold mb-1.5" for="email">
+              University or Personal Email
+            </label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-lg">mail</span>
+</span>
+<input class="w-full h-11 pl-11 pr-4 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest border border-border-subtle" id="email" placeholder="alex.chen@student.cs.edu" type="email" value="alex.chen@student.cs.edu"/>
+</div>
+<p class="mt-1 font-body-sm text-body-sm text-on-surface-variant">We support institutional .edu credentials for auto-verified university tracks</p>
+</div>
+<!-- Password Field -->
+<div>
+<label class="block font-label-ui text-label-ui text-on-surface font-semibold mb-1.5" for="password">
+              Password
+            </label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-lg">lock</span>
+</span>
+<input class="w-full h-11 pl-11 pr-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest border border-border-subtle" id="password" oninput="updatePasswordAnalysis()" placeholder="Create a strong password" type="password" value="VibrantWarmth9#Code"/>
+<button aria-label="Toggle password visibility" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface" onclick="toggleVisibility('password', this)" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+<!-- Password Strength Bar & Label -->
+<div class="mt-2 space-y-1.5">
+<div class="flex gap-1.5 h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="w-1/3 bg-primary-container rounded-full"></div>
+<div class="w-1/3 bg-primary-container rounded-full"></div>
+<div class="w-1/3 bg-secondary-container rounded-full"></div>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="pw-strength-msg">
+                  Strong password — includes symbols, uppercase, and numbers
+                </span>
+</div>
+</div>
+</div>
+<!-- Confirm Password Field -->
+<div>
+<label class="block font-label-ui text-label-ui text-on-surface font-semibold mb-1.5" for="confirmPassword">
+              Confirm Password
+            </label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-lg">shield</span>
+</span>
+<input class="w-full h-11 pl-11 pr-11 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest border border-border-subtle" id="confirmPassword" oninput="checkPasswordMatch()" placeholder="Re-enter your password" type="password" value="VibrantWarmth9#Code"/>
+<button aria-label="Toggle password visibility" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-outline hover:text-on-surface" onclick="toggleVisibility('confirmPassword', this)" type="button">
+<span class="material-symbols-outlined text-lg">visibility</span>
+</button>
+</div>
+<!-- Live Match Confirmation -->
+<div class="mt-1.5 flex items-center gap-1.5 text-on-surface font-body-sm text-body-sm" id="matchNotice">
+<span class="material-symbols-outlined text-base text-secondary font-bold">check_circle</span>
+<span class="text-secondary font-semibold">✓ Passwords match</span>
+</div>
+</div>
+<!-- Honor Code Checkbox -->
+<div class="pt-2">
+<label class="flex items-start gap-3 cursor-pointer group select-none">
+<div class="relative flex items-center justify-center mt-0.5">
+<input checked="" class="sr-only peer" id="honorCode" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-surface-container-lowest shadow-sm peer-checked:bg-primary-container peer-focus:outline-none transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm scale-0 peer-checked:scale-100 transition-transform font-bold">check</span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                I agree to the <a class="text-primary font-semibold hover:underline" href="javascript:void(0)">OA Practice Honor Code</a> and pledge to solve timed problems without generative AI aids during mock sessions.
+              </div>
+</label>
+</div>
+<!-- Submit Button (Primary Coral Orange Action) -->
+<div class="pt-3">
+<button class="w-full h-12 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui font-bold shadow-md hover:bg-primary transition-all duration-150 flex items-center justify-center gap-2 group cursor-pointer" type="submit">
+<span>Create Account</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+<!-- Terms & Privacy Footnote -->
+<p class="font-body-sm text-body-sm text-outline text-center mt-5">
+          By signing up, you acknowledge our Warm Testing Manifesto. No credit card required.
+        </p>
+<!-- Bottom Sign-In Navigation -->
+<div class="mt-8 pt-6 bg-surface-container-low rounded-xl p-4 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Already have an account? 
+            <a class="text-primary font-label-ui text-label-ui font-bold ml-1 hover:underline inline-flex items-center gap-0.5" href="javascript:void(0)">
+<span>Sign in</span>
+<span class="material-symbols-outlined text-base">login</span>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleVisibility(inputId, triggerBtn) {
+    const input = document.getElementById(inputId);
+    const icon = triggerBtn.querySelector('.material-symbols-outlined');
+    if (!input || !icon) return;
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.textContent = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.textContent = 'visibility';
+    }
+  }
+
+  function checkPasswordMatch() {
+    const pw = document.getElementById('password')?.value || '';
+    const confirm = document.getElementById('confirmPassword')?.value || '';
+    const notice = document.getElementById('matchNotice');
+    if (!notice) return;
+
+    if (confirm.length === 0) {
+      notice.innerHTML = '<span class="text-outline">Please confirm your password</span>';
+      return;
+    }
+
+    if (pw === confirm) {
+      notice.innerHTML = '<span class="material-symbols-outlined text-base text-secondary font-bold">check_circle</span><span class="text-secondary font-semibold">✓ Passwords match</span>';
+    } else {
+      notice.innerHTML = '<span class="material-symbols-outlined text-base text-error">error</span><span class="text-error font-medium">Passwords do not match yet</span>';
+    }
+  }
+
+  function updatePasswordAnalysis() {
+    checkPasswordMatch();
+    const pw = document.getElementById('password')?.value || '';
+    const msg = document.getElementById('pw-strength-msg');
+    if (!msg) return;
+
+    if (pw.length < 6) {
+      msg.textContent = 'Too short — minimum 8 characters recommended';
+    } else if (pw.length < 10) {
+      msg.textContent = 'Moderate strength — add special symbols';
+    } else {
+      msg.textContent = 'Strong password — includes symbols, uppercase, and numbers';
+    }
+  }
+
+  function validateForm() {
+    const honor = document.getElementById('honorCode');
+    if (honor && !honor.checked) {
+      alert('Please acknowledge the OA Practice Honor Code to continue.');
+      return;
+    }
+    const btn = document.querySelector('button[type="submit"]');
+    if (btn) {
+      btn.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">progress_activity</span><span>Preparing Your Sandbox...</span>';
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-lg">check</span><span>Account Created! Redirecting...</span>';
+      }, 1000);
+    }
+  }
+</script></main></body></html>

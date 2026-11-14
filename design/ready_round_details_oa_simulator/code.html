@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"success":"#6B9B78","warning":"#E9B95B","border-subtle":"#E9E4DB","error-container":"#ffdad6","surface-container-highest":"#e4e2e1","primary":"#a43d0d","outline":"#8b7269","on-secondary-fixed":"#331200","on-tertiary-fixed-variant":"#5d4200","surface-container":"#f0eded","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3f2","outline-variant":"#dec0b6","on-surface":"#252525","surface-bright":"#FAF7F0","primary-fixed-dim":"#ffb59a","inverse-primary":"#ffb59a","secondary-fixed":"#ffdbc9","tertiary-container":"#c0943a","tertiary":"#7b5800","on-primary-fixed":"#380d00","on-error-container":"#93000a","on-primary":"#ffffff","tertiary-fixed":"#ffdea5","surface-container-high":"#eae7e7","tertiary-fixed-dim":"#f0bf60","error":"#D96C61","on-secondary-container":"#773a10","on-secondary":"#ffffff","surface-variant":"#e4e2e1","on-tertiary-fixed":"#271900","on-error":"#ffffff","on-background":"#252525","on-primary-container":"#5f1d00","on-secondary-fixed-variant":"#72360c","on-surface-variant":"#77736E","secondary-fixed-dim":"#ffb68d","surface":"#FAF7F0","on-tertiary-container":"#442f00","secondary":"#8f4d22","secondary-container":"#F6A16F","on-tertiary":"#ffffff","primary-fixed":"#ffdbcf","inverse-on-surface":"#f3f0ef","background":"#FAF7F0","on-primary-fixed-variant":"#802a00","primary-container":"#f47745","surface-tint":"#a43d0d","inverse-surface":"#303030","surface-dim":"#dcd9d9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"1rem","2xl":"1.5rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",margin:"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-md":"1rem",gutter:"1rem","space-xl":"2.5rem"},fontFamily:{"label-ui":["Plus Jakarta Sans"],"label-code-lg":["JetBrains Mono"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"]},fontSize:{"label-ui":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"label-code-lg":["14px",{lineHeight:"22px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}]}}}};</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(37,37,37,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">terminal</span></span><span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">OA Simulator</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_12px_rgba(244,119,69,0.28)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-ui text-label-ui transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-ui text-label-ui transition-all" data-path="my-rounds" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span>My Rounds</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-ui text-label-ui transition-all" data-path="create-round" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Create Round</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-label-ui text-label-ui transition-all" data-path="performance-report" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Performance</span></a></nav></div><div class="px-space-md"><div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm"><div class="flex items-center justify-between"><span class="font-label-code-sm text-label-code-sm text-primary font-bold">PRO PLAN</span><span class="material-symbols-outlined text-primary text-[18px]">verified</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Amazon & Google OA Mock Round access unlocked.</p></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(37,37,37,0.04)]"><div class="h-full w-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui shadow-[0_4px_12px_rgba(244,119,69,0.2)] hover:bg-secondary hover:text-on-secondary transition-all" data-path="create-round" href="#"><span class="material-symbols-outlined text-[18px]">play_arrow</span><span>New Assessment</span></a></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm pl-space-md"><span class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-ui text-label-ui font-bold">AC</span><div class="flex flex-col text-left"><span class="font-label-ui text-label-ui text-on-surface leading-tight">Alex Chen</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Candidate</span></div><a class="ml-space-sm p-1 rounded-lg text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#" title="Logout"><span class="material-symbols-outlined text-[20px]">logout</span></a></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-gutter-desktop py-space-lg max-w-[1380px] mx-auto w-full flex flex-col gap-space-xl">
+<!-- Top Bar: Breadcrumb, Live System Indicator & Status Pill -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-ui text-label-ui">
+<a class="hover:text-primary transition-colors" data-path="dashboard" href="#">Dashboard</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<a class="hover:text-primary transition-colors" data-path="my-rounds" href="#">My Rounds</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="font-label-code-sm text-label-code-sm text-primary font-bold px-space-xs py-0.5 rounded bg-surface-container">#OA-8501</span>
+</nav>
+<div class="flex items-center gap-space-md">
+<div class="hidden sm:flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>SANDBOX STAGED</span>
+</div>
+<!-- Status Badge: Warm Amber Treatment -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">pause_circle</span>
+<span class="font-label-ui text-label-ui tracking-wide">READY (Untimed)</span>
+</div>
+</div>
+</div>
+<!-- Editorial Header & Prominent Launch Notice -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-code-sm text-label-code-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+          Session Envelope Provisioned
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Assessment <span class="text-primary font-label-code-lg">#OA-8501</span> is Configured
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Review your challenge composition, algorithmic domains, and runtime constraints before launching the timed session.
+        </p>
+</div>
+<!-- Notice Banner (Warm Cream with tactile coral accent bar) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-[0_4px_20px_rgba(37,37,37,0.04)] p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start gap-space-md pl-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[24px]">timer</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+              Timer Integrity Notice
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+              Your assessment is ready. The clock will begin ticking <span class="font-semibold text-on-surface">only</span> when you press <span class="text-primary font-semibold">Start Assessment</span>. Once started, the round becomes <span class="text-primary-container font-semibold uppercase font-label-code-sm">Active</span> and its strict 60-minute cutoff is server-enforced without pauses.
+            </p>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-on-surface-variant bg-surface-container px-space-md py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock_clock</span>
+<span>LATENCY: 18ms</span>
+</div>
+</div>
+</div>
+<!-- Overview 4-Card Bento Grid with Visual Richness -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Duration -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all border border-border-subtle">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-ui text-label-ui uppercase tracking-wider">Allotted Duration</span>
+<span class="material-symbols-outlined text-[20px] text-primary-container">hourglass_top</span>
+</div>
+<div class="my-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-black">60</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">Minutes</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sync</span>
+<span>Server synced upon ignition</span>
+</div>
+</div>
+<!-- Card 2: Problems & Stack -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all border border-border-subtle">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-ui text-label-ui uppercase tracking-wider">Total Problems</span>
+<span class="material-symbols-outlined text-[20px] text-primary">data_object</span>
+</div>
+<div class="my-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-black">3</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">Algorithmic</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-on-surface-variant">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span>Python 3.11 Runtime VEnv</span>
+</div>
+</div>
+<!-- Card 3: Creation Timestamp -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all border border-border-subtle">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-ui text-label-ui uppercase tracking-wider">Creation Timestamp</span>
+<span class="material-symbols-outlined text-[20px] text-outline">schedule</span>
+</div>
+<div class="my-space-md flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Today, 11:20</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">EST / UTC-5</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">history</span>
+<span>Expires in 7 days if unstarted</span>
+</div>
+</div>
+<!-- Card 4: Current Status & Readiness -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all border border-border-subtle">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-ui text-label-ui uppercase tracking-wider">Current Status</span>
+<span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
+</div>
+<div class="my-space-md flex items-center gap-space-sm">
+<div class="w-3 h-3 rounded-full bg-tertiary-container"></div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Ready to Launch</span>
+</div>
+<div class="flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant">
+<span>ALL TESTS CACHED</span>
+<span class="text-primary font-bold">3/3</span>
+</div>
+</div>
+</div>
+<!-- Section 4: Configured Questions Breakdown (Redacted Pre-Start Mode) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<div class="text-primary font-label-code-sm text-label-code-sm uppercase tracking-wider">Payload Schema</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Challenge Architecture</h2>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility_off</span>
+<span>Full statements & editor unlock upon session activation</span>
+</div>
+</div>
+<!-- Stacked Question Slots with tactile locked representations -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Slot 1 Card: Easy Arrays -->
+<div class="relative group rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all overflow-hidden border border-border-subtle">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-code-lg text-label-code-lg text-primary font-bold">Question 01</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-surface-container-low text-on-surface font-semibold">
+                Easy
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Target Domain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Arrays & Two Pointers</h3>
+</div>
+<!-- Redacted statement placeholder preview -->
+<div class="flex flex-col gap-2 py-space-sm">
+<div class="h-2.5 bg-surface-container rounded-full w-full"></div>
+<div class="h-2.5 bg-surface-container rounded-full w-5/6"></div>
+<div class="h-2.5 bg-surface-container rounded-full w-2/3"></div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">pace</span>
+<span>Est. 12m</span>
+</div>
+<div class="inline-flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Locked</span>
+</div>
+</div>
+</div>
+<!-- Slot 2 Card: Medium Binary Search -->
+<div class="relative group rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all overflow-hidden border border-border-subtle">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-code-lg text-label-code-lg text-primary font-bold">Question 02</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+                Medium
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Target Domain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Binary Search & Monotonic Queues</h3>
+</div>
+<!-- Redacted statement placeholder preview -->
+<div class="flex flex-col gap-2 py-space-sm">
+<div class="h-2.5 bg-surface-container rounded-full w-full"></div>
+<div class="h-2.5 bg-surface-container rounded-full w-11/12"></div>
+<div class="h-2.5 bg-surface-container rounded-full w-3/4"></div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">pace</span>
+<span>Est. 20m</span>
+</div>
+<div class="inline-flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Locked</span>
+</div>
+</div>
+</div>
+<!-- Slot 3 Card: Hard Graph BFS -->
+<div class="relative group rounded-xl bg-surface-container-lowest p-space-lg flex flex-col justify-between shadow-[0_4px_16px_rgba(37,37,37,0.04)] hover:shadow-[0_8px_24px_rgba(37,37,37,0.07)] transition-all overflow-hidden border border-border-subtle">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-code-lg text-label-code-lg text-primary font-bold">Question 03</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-code-sm text-label-code-sm bg-primary-fixed text-on-primary-fixed font-semibold">
+                Hard
+              </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-wider">Target Domain</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Graph BFS & Shortest Paths</h3>
+</div>
+<!-- Redacted statement placeholder preview -->
+<div class="flex flex-col gap-2 py-space-sm">
+<div class="h-2.5 bg-surface-container rounded-full w-full"></div>
+<div class="h-2.5 bg-surface-container rounded-full w-4/5"></div>
+<div class="h-2.5 bg-surface-container rounded-full w-1/2"></div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-code-sm text-label-code-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">pace</span>
+<span>Est. 30m</span>
+</div>
+<div class="inline-flex items-center gap-1 text-on-surface-variant/80">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Locked</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Candidate Environment & Rules Digest (Rich Editorial Panel) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-[0_4px_16px_rgba(37,37,37,0.04)] flex flex-col md:flex-row items-stretch justify-between gap-space-lg border border-border-subtle">
+<div class="flex flex-col gap-space-sm max-w-xl">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Simulation Protocols</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          This round models official enterprise Online Assessment proctoring environments. WebCam feeds and external network access will not be required, but test suite evaluation is executed against undisclosed edge cases upon code submission.
+        </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span>Standard I/O Execution</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">memory</span>
+<span>256 MB Memory Cap</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">speed</span>
+<span>2.0s Execution Timeout</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">keyboard</span>
+<span>Vim / Sublime Keymaps</span>
+</div>
+</div>
+</div>
+<!-- Live Environment Integrity Specimen -->
+<div class="rounded-xl bg-inverse-surface p-space-md text-inverse-on-surface flex flex-col justify-between min-w-[280px] shadow-inner">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed">SANDBOX RUNNER</span>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+</div>
+<div class="font-label-code-sm text-label-code-sm flex flex-col gap-1 text-surface-container">
+<p class="text-surface-dim">> ping cluster-iad-04.oa</p>
+<p class="text-primary-fixed-dim">OK: 200 PROVISIONED</p>
+<p class="text-surface-dim">> pytest --version</p>
+<p>pytest 8.2.1 / CPython 3.11.8</p>
+</div>
+<div class="pt-space-md font-label-code-sm text-label-code-sm text-surface-dim flex items-center justify-between">
+<span>Worker: node-092-alpha</span>
+<span class="text-secondary-fixed">STAGED</span>
+</div>
+</div>
+</div>
+<!-- Section 5: Main Action Bar & Responsive Confirmation Preview -->
+<div class="flex flex-col gap-space-md pt-space-xs pb-space-xl">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-[0_4px_16px_rgba(37,37,37,0.04)]">
+<!-- Left Sub-actions -->
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-error hover:bg-error-container hover:text-on-error-container font-label-ui text-label-ui transition-all shadow-sm" id="open-delete-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+<span>Delete Round</span>
+</button>
+<a class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all shadow-sm" data-path="my-rounds" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Rounds</span>
+</a>
+</div>
+<!-- Primary CTA: Start Assessment -->
+<div class="w-full sm:w-auto flex items-center gap-space-md">
+<div class="hidden lg:flex flex-col items-end text-right">
+<span class="font-label-ui text-label-ui text-on-surface">Ready when you are</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assessment token expires in 168 hours</span>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-3.5 rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm font-bold shadow-[0_8px_24px_rgba(244,119,69,0.32)] hover:bg-secondary hover:text-on-secondary transition-all hover:scale-[1.01] active:scale-[0.99]" id="start-round-btn" type="button">
+<span class="material-symbols-outlined text-[24px]">play_circle</span>
+<span>Start Assessment (Begin Timer)</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Subtle In-Context Confirmation Card (Delete Modal Preview) -->
+<div class="hidden transition-all duration-300" id="delete-confirmation-card">
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-[0_12px_32px_rgba(37,37,37,0.12)] flex flex-col sm:flex-row items-center justify-between gap-space-md border border-border-subtle">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Delete Assessment #OA-8501?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                This configured round will be permanently removed along with its provisioned sandbox slots and question sequence. This action cannot be undone.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full sm:w-auto justify-end">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-ui text-label-ui transition-colors" id="cancel-delete-btn" type="button">
+              Cancel
+            </button>
+<button class="px-space-md py-2 rounded-lg bg-error text-on-error hover:opacity-90 font-label-ui text-label-ui transition-all shadow-sm" id="confirm-delete-btn" type="button">
+              Confirm Delete
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const openDeleteBtn = document.getElementById('open-delete-btn');
+    const deleteCard = document.getElementById('delete-confirmation-card');
+    const cancelDeleteBtn = document.getElementById('cancel-delete-btn');
+    const confirmDeleteBtn = document.getElementById('confirm-delete-btn');
+    const startBtn = document.getElementById('start-round-btn');
+
+    if (openDeleteBtn && deleteCard && cancelDeleteBtn) {
+      openDeleteBtn.addEventListener('click', () => {
+        deleteCard.classList.remove('hidden');
+        deleteCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+
+      cancelDeleteBtn.addEventListener('click', () => {
+        deleteCard.classList.add('hidden');
+      });
+
+      confirmDeleteBtn.addEventListener('click', () => {
+        confirmDeleteBtn.innerText = 'Deleting...';
+        confirmDeleteBtn.disabled = true;
+        setTimeout(() => {
+          window.location.href = '#';
+        }, 600);
+      });
+    }
+
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        startBtn.innerHTML = `
+          <span class="material-symbols-outlined animate-spin text-[22px]">progress_activity</span>
+          <span>Launching Sandbox...</span>
+        `;
+        startBtn.disabled = true;
+        setTimeout(() => {
+          // Navigation hook for active session
+          window.location.href = '#';
+        }, 800);
+      });
+    }
+  })();
+</script></main></div></body></html>

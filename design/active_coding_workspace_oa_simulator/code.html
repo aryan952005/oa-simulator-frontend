@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"success":"#6B9B78","warning":"#E9B95B","border-subtle":"#E9E4DB","error-container":"#ffdad6","surface-container-highest":"#e4e2e1","primary":"#a43d0d","outline":"#8b7269","on-secondary-fixed":"#331200","on-tertiary-fixed-variant":"#5d4200","surface-container":"#f0eded","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3f2","outline-variant":"#dec0b6","on-surface":"#252525","surface-bright":"#FAF7F0","primary-fixed-dim":"#ffb59a","inverse-primary":"#ffb59a","secondary-fixed":"#ffdbc9","tertiary-container":"#c0943a","tertiary":"#7b5800","on-primary-fixed":"#380d00","on-error-container":"#93000a","on-primary":"#ffffff","tertiary-fixed":"#ffdea5","surface-container-high":"#eae7e7","tertiary-fixed-dim":"#f0bf60","error":"#D96C61","on-secondary-container":"#773a10","on-secondary":"#ffffff","surface-variant":"#e4e2e1","on-tertiary-fixed":"#271900","on-error":"#ffffff","on-background":"#252525","on-primary-container":"#5f1d00","on-secondary-fixed-variant":"#72360c","on-surface-variant":"#77736E","secondary-fixed-dim":"#ffb68d","surface":"#FAF7F0","on-tertiary-container":"#442f00","secondary":"#8f4d22","secondary-container":"#F6A16F","on-tertiary":"#ffffff","primary-fixed":"#ffdbcf","inverse-on-surface":"#f3f0ef","background":"#FAF7F0","on-primary-fixed-variant":"#802a00","primary-container":"#f47745","surface-tint":"#a43d0d","inverse-surface":"#303030","surface-dim":"#dcd9d9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"1rem","2xl":"1.5rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",margin:"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-md":"1rem",gutter:"1rem","space-xl":"2.5rem"},fontFamily:{"label-ui":["Plus Jakarta Sans"],"label-code-lg":["JetBrains Mono"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"]},fontSize:{"label-ui":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"label-code-lg":["14px",{lineHeight:"22px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen"><main class="w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- TOP ASSESSMENT CONTROL HEADER -->
+<header class="w-full bg-inverse-surface text-surface-bright px-margin lg:px-margin-desktop py-space-sm flex flex-wrap items-center justify-between gap-space-md shadow-md z-30">
+<!-- Brand + Session Metadata -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-surface-bright">OA Simulator</span>
+</div>
+<div class="h-4 w-[1px] bg-outline/40"></div>
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded bg-surface-container-highest/20 text-outline-variant font-medium">
+        #OA-8492
+      </span>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed-dim text-label-ui font-label-ui">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+        ACTIVE
+      </div>
+</div>
+<!-- Center High-Contrast Countdown Engine -->
+<div class="flex items-center gap-space-sm bg-surface-container-highest/15 px-space-md py-1.5 rounded-lg border-0 shadow-inner">
+<span class="material-symbols-outlined text-primary-container text-[20px]">timer</span>
+<span class="text-label-ui font-label-ui uppercase tracking-wider text-outline-variant">Time Remaining</span>
+<span class="font-label-code-lg text-label-code-lg font-bold text-surface-bright tracking-wider" id="assessment-timer">
+        38:24
+      </span>
+<span class="text-body-sm font-body-sm text-tertiary-fixed-dim">Server Synced</span>
+</div>
+<!-- Right Controls: Save state & Finish Action -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 text-body-sm font-body-sm text-tertiary-fixed">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Autosaved 12s ago</span>
+</div>
+<button class="cursor-pointer px-3.5 py-1.5 rounded bg-surface-container-highest/20 hover:bg-primary-container text-surface-bright hover:text-on-primary transition duration-150 font-label-ui text-label-ui flex items-center gap-1" id="open-finish-modal-btn" type="button">
+<span>Finish Assessment</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</header>
+<!-- SUBHEADER / PROBLEM SELECTOR BAR -->
+<nav class="w-full bg-surface-container-low px-margin lg:px-margin-desktop py-2.5 flex flex-wrap items-center justify-between gap-space-md shadow-sm z-20">
+<!-- Problem Navigation Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto">
+<!-- Question 1: Solved -->
+<button class="group flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high transition cursor-pointer text-left" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-success">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui text-on-surface">Q1: Array Partition</span>
+<span class="font-body-sm text-body-sm text-outline">Passed (100%)</span>
+</div>
+</button>
+<!-- Question 2: Active -->
+<button class="group flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container-lowest shadow-sm text-left" type="button">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-code-sm text-[11px] font-bold">
+          2
+        </span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-ui text-label-ui font-bold text-primary">Q2: Min Capacity Route</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-semibold">In Progress</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Medium • 2/2 Samples Passed</span>
+</div>
+</button>
+<!-- Question 3: Pending -->
+<button class="group flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container hover:bg-surface-container-high transition cursor-pointer text-left" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-label-code-sm text-[11px]">
+          3
+        </span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui text-on-surface">Q3: Optimal Grid Flight</span>
+<span class="font-body-sm text-body-sm text-outline">Hard • Not Attempted</span>
+</div>
+</button>
+</div>
+<!-- Telemetry & Attempt Quotas -->
+<div class="flex items-center gap-space-lg text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="text-outline">Runs Left:</span>
+<div class="flex items-center gap-1">
+<span class="font-label-code-sm text-label-code-sm font-semibold text-on-surface">24</span>
+<span class="text-outline">/ 30</span>
+</div>
+<div class="w-16 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+<div class="h-3 w-[1px] bg-outline-variant"></div>
+<div class="flex items-center gap-2">
+<span class="text-outline">Submits Left:</span>
+<div class="flex items-center gap-1">
+<span class="font-label-code-sm text-label-code-sm font-semibold text-on-surface">18</span>
+<span class="text-outline">/ 20</span>
+</div>
+<div class="w-16 h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+</nav>
+<!-- SPLIT WORKSPACE: 45% PROBLEM DESCRIPTION | 55% IDE & EXECUTION CONSOLE -->
+<div class="w-full flex-1 flex flex-col lg:flex-row items-stretch overflow-hidden bg-surface">
+<!-- LEFT PANEL: ALGORITHMIC SPECIFICATION (45% Width) -->
+<section class="w-full lg:w-[45%] flex flex-col bg-surface-bright overflow-y-auto px-margin lg:px-margin-desktop py-space-lg">
+<!-- Title & Complexity Badges -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-ui text-label-ui">
+            Medium
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-ui text-label-ui">
+            Binary Search
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-ui text-label-ui">
+            Monotonic Arrays
+          </span>
+<span class="font-label-code-sm text-label-code-sm text-outline ml-auto">
+            Time: 2.0s | Mem: 256MB
+          </span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight mt-1">
+          Question 2: Minimum Capacity Route
+        </h1>
+</div>
+<!-- Problem Narrative Body -->
+<div class="flex flex-col gap-space-md text-body-md font-body-md text-on-surface">
+<p class="leading-relaxed">
+          A conveyor system carries a sequence of packages to a cargo shuttle. You are provided an integer array <code class="font-label-code-sm text-label-code-sm bg-surface-container px-1 py-0.5 rounded text-primary">weights</code> representing individual parcels in chronological conveyor order, and an integer <code class="font-label-code-sm text-label-code-sm bg-surface-container px-1 py-0.5 rounded text-primary">days</code> indicating the strict deadline to complete the transfer.
+        </p>
+<p class="leading-relaxed">
+          Each day, packages are loaded onto the transport vehicle in sequential conveyor belt order. The vehicle cannot load more weight than its maximum weight capacity on any given departure cycle.
+        </p>
+<div class="p-space-md rounded-lg bg-surface-container-low text-on-surface flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px] mt-0.5">lightbulb</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+<strong>Key Requirement:</strong> Calculate the <em>minimum integer weight capacity</em> of the transport shuttle such that all parcels on the conveyor belt are delivered within exactly or fewer than <code class="font-label-code-sm text-label-code-sm text-primary font-bold">days</code>.
+          </p>
+</div>
+<!-- Section: I/O Specification -->
+<div class="mt-space-xs flex flex-col gap-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Input & Output Specifications</h2>
+<div class="bg-surface-container p-space-sm rounded text-body-sm font-body-sm space-y-1">
+<p><strong>Input:</strong> An array of integers <code class="font-label-code-sm text-label-code-sm text-primary font-semibold">weights</code> and an integer <code class="font-label-code-sm text-label-code-sm text-primary font-semibold">days</code>.</p>
+<p><strong>Output:</strong> Return a single integer representing the minimum possible capacity.</p>
+</div>
+</div>
+<!-- Section: Constraints -->
+<div class="flex flex-col gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Constraints</h2>
+<ul class="list-disc pl-5 space-y-1 font-label-code-sm text-label-code-sm text-on-surface-variant">
+<li><span class="text-on-surface">1 ≤ days ≤ weights.length ≤ 5 × 10<sup>4</sup></span></li>
+<li><span class="text-on-surface">1 ≤ weights[i] ≤ 500</span></li>
+<li>All packages must be loaded in the exact order received.</li>
+</ul>
+</div>
+<!-- Section: Sample Test Cases -->
+<div class="flex flex-col gap-space-md mt-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sample Cases</h2>
+<!-- Sample 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-primary uppercase font-bold tracking-wider">Example 1</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Public Test</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-label-code-sm text-label-code-sm text-on-surface space-y-1">
+<div><span class="text-outline">Input:</span> weights = [1,2,3,4,5,6,7,8,9,10], days = 5</div>
+<div><span class="text-outline">Output:</span> <span class="font-bold text-primary">15</span></div>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant pl-2 bg-surface-container/50 rounded py-1 px-2">
+<strong>Walkthrough:</strong> A shuttle capacity of 15 is optimal:
+              <br/>Day 1: 1, 2, 3, 4, 5 (Weight: 15)
+              <br/>Day 2: 6, 7 (Weight: 13)
+              <br/>Day 3: 8 (Weight: 8)
+              <br/>Day 4: 9 (Weight: 9)
+              <br/>Day 5: 10 (Weight: 10)
+              <br/>Notice splits cannot be reshuffled—parcels are contiguous.
+            </div>
+</div>
+<!-- Sample 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-primary uppercase font-bold tracking-wider">Example 2</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Public Test</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded font-label-code-sm text-label-code-sm text-on-surface space-y-1">
+<div><span class="text-outline">Input:</span> weights = [3,2,2,4,1,4], days = 3</div>
+<div><span class="text-outline">Output:</span> <span class="font-bold text-primary">6</span></div>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant pl-2 bg-surface-container/50 rounded py-1 px-2">
+<strong>Explanation:</strong> A capacity of 6 splits packages into: [3, 2], [2, 4], and [1, 4] across 3 days without exceeding daily capacity.
+            </div>
+</div>
+</div>
+<!-- Custom Guidance Note -->
+<div class="mt-space-sm p-space-sm bg-surface-container rounded text-body-sm font-body-sm text-on-surface-variant flex items-center justify-between">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-outline">help_center</span>
+            Need scratchpad calculations?
+          </span>
+<button class="text-primary font-label-ui text-label-ui hover:underline" type="button">Toggle Scratchpad Notes</button>
+</div>
+</div>
+</section>
+<!-- RESIZABLE DIVIDER VISUAL ANCHOR -->
+<div class="hidden lg:flex w-1.5 bg-surface-container-high hover:bg-primary-container transition-colors cursor-col-resize items-center justify-center group relative z-10">
+<div class="w-1 h-8 rounded-full bg-outline-variant group-hover:bg-on-primary"></div>
+</div>
+<!-- RIGHT PANEL: IDE & OUTPUT CONSOLE (55% Width, Warm Dark Atmosphere) -->
+<section class="w-full lg:w-[55%] flex flex-col bg-[#1C1A18] text-[#FAF7F0] overflow-hidden">
+<!-- Editor Chrome Toolbar -->
+<div class="w-full bg-[#25221F] px-space-md py-2 flex flex-wrap items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 bg-[#181615] px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-[15px] text-primary-container">code</span>
+<span class="font-label-code-sm text-label-code-sm font-semibold text-[#FAF7F0]">solution.py</span>
+</div>
+<div class="relative">
+<select class="bg-[#2D2925] text-[#FAF7F0] font-label-ui text-label-ui px-2.5 py-1 rounded cursor-pointer pr-6 appearance-none focus:outline-none focus:bg-[#38332E]">
+<option selected="">Python 3.11 (CPython)</option>
+<option>Java 17 (OpenJDK)</option>
+<option>C++ 20 (GCC 12)</option>
+<option>TypeScript 5.1 (Node v20)</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-1/2 -translate-y-1/2 text-[14px] text-[#A69E96] pointer-events-none">expand_more</span>
+</div>
+<span class="hidden xl:inline text-label-code-sm font-label-code-sm text-[#8C847C]">Ln 14, Col 21</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-[11px] font-label-ui text-[#A69E96] flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+            Auto-save: 1.5s debounce
+          </span>
+<button class="text-label-ui font-label-ui text-[#C7BDB3] hover:text-primary-container transition flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">history</span>
+            Reset Code
+          </button>
+</div>
+</div>
+<!-- Code Surface (Monospaced, Syntax Highlighted in Warm Palette) -->
+<div class="flex-1 overflow-y-auto bg-[#181615] p-space-sm font-label-code-sm text-label-code-sm leading-relaxed flex">
+<!-- Line Numbers Column -->
+<div class="select-none text-right pr-space-md text-[#665F58] font-label-code-sm text-label-code-sm flex flex-col gap-0 min-w-[2.5rem]">
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>10</span>
+<span>11</span>
+<span>12</span>
+<span>13</span>
+<span class="text-primary-container font-bold">14</span>
+<span>15</span>
+<span>16</span>
+<span>17</span>
+<span>18</span>
+<span>19</span>
+<span>20</span>
+<span>21</span>
+<span>22</span>
+</div>
+<!-- Code Content Block -->
+<pre class="flex-1 overflow-x-auto text-[#FAF7F0] focus:outline-none"><code><span class="text-[#F6A16F]">import</span> sys
+<span class="text-[#F6A16F]">from</span> typing <span class="text-[#F6A16F]">import</span> List
+
+<span class="text-[#F6A16F]">def</span> <span class="text-[#E9B95B] font-semibold">shipWithinDays</span>(weights: List[<span class="text-[#E9B95B]">int</span>], days: <span class="text-[#E9B95B]">int</span>) -> <span class="text-[#E9B95B]">int</span>:
+    <span class="text-[#7D756C] italic"># Lower bound must be maximum item weight; upper bound is total sum</span>
+    left = <span class="text-[#E9B95B]">max</span>(weights)
+    right = <span class="text-[#E9B95B]">sum</span>(weights)
+    
+    <span class="text-[#F6A16F]">def</span> <span class="text-[#E9B95B] font-semibold">feasible</span>(capacity: <span class="text-[#E9B95B]">int</span>) -> <span class="text-[#E9B95B]">bool</span>:
+        days_needed = <span class="text-[#F47745]">1</span>
+        curr_load = <span class="text-[#F47745]">0</span>
+        <span class="text-[#F6A16F]">for</span> w <span class="text-[#F6A16F]">in</span> weights:
+            <span class="text-[#F6A16F]">if</span> curr_load + w > capacity:
+                days_needed += <span class="text-[#F47745]">1</span>
+                curr_load = <span class="text-[#F47745]">0</span>
+            curr_load += w
+        <span class="text-[#F6A16F]">return</span> days_needed <= days
+
+    <span class="text-[#F6A16F]">while</span> left < right:
+        mid = (left + right) // <span class="text-[#F47745]">2</span>
+        <span class="text-[#F6A16F]">if</span> feasible(mid):
+            right = mid
+        <span class="text-[#F6A16F]">else</span>:
+            left = mid + <span class="text-[#F47745]">1</span>
+            
+    <span class="text-[#F6A16F]">return</span> left</code></pre>
+</div>
+<!-- Execution Panel Header & Terminal Tabs -->
+<div class="bg-[#211E1B] flex flex-col">
+<!-- Action Buttons Ribbon -->
+<div class="p-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-[#272320]">
+<!-- Console Navigation Tabs -->
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded font-label-ui text-label-ui text-[#FAF7F0] bg-[#181615] flex items-center gap-1.5" id="tab-testcases" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+              Testcase Results (Public)
+            </button>
+<button class="px-3 py-1.5 rounded font-label-ui text-label-ui text-[#8C847C] hover:text-[#FAF7F0] transition flex items-center gap-1.5" id="tab-stdout" type="button">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+              Console Logs / stdout
+            </button>
+<button class="px-3 py-1.5 rounded font-label-ui text-label-ui text-[#8C847C] hover:text-[#FAF7F0] transition flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+              Custom Inputs
+            </button>
+</div>
+<!-- Major Primary Actions -->
+<div class="flex items-center gap-space-sm">
+<!-- Run Code Button -->
+<button class="cursor-pointer px-4 py-2 rounded bg-[#332C27] hover:bg-[#3D352F] text-[#FAF7F0] transition duration-150 font-label-ui text-label-ui flex items-center gap-2 shadow-sm" id="run-code-btn" type="button">
+<span class="material-symbols-outlined text-primary-container text-[18px]">play_arrow</span>
+<div class="flex flex-col text-left">
+<span class="font-bold tracking-wide">RUN CODE</span>
+<span class="text-[10px] text-[#A69E96] -mt-0.5">24 runs remaining</span>
+</div>
+</button>
+<!-- Submit Solution Button -->
+<button class="cursor-pointer px-5 py-2 rounded bg-primary-container hover:bg-primary text-on-primary transition duration-150 font-label-ui text-label-ui flex items-center gap-2 shadow-md" id="submit-code-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+<div class="flex flex-col text-left">
+<span class="font-bold tracking-wide">SUBMIT SOLUTION</span>
+<span class="text-[10px] text-primary-fixed -mt-0.5">Evaluate Hidden (18 left)</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Terminal Console Viewport -->
+<div class="p-space-md bg-[#161413] max-h-56 overflow-y-auto font-label-code-sm text-label-code-sm flex flex-col gap-space-sm" id="console-output">
+<!-- Execution Outcome Ribbon -->
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary-fixed font-bold text-label-ui flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Sample Tests: 2/2 Passed
+              </span>
+<span class="text-[#8C847C] font-label-code-sm text-label-code-sm">Runtime: 21ms | Peak Memory: 17.8 MB</span>
+</div>
+<span class="text-[#8C847C] text-[11px]">Execution environment: Linux x86_64</span>
+</div>
+<!-- Sample Cases Output Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Sample 1 Passed Box -->
+<div class="bg-[#1F1C1A] p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-tertiary-fixed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done</span>
+                  Sample Case 1
+                </span>
+<span class="text-[#8C847C] text-[11px]">12ms</span>
+</div>
+<div class="text-[#C7BDB3] text-body-sm font-body-sm">
+<div><span class="text-[#7D756C]">Input:</span> [1,2,3,4,5,6,7,8,9,10], 5</div>
+<div><span class="text-[#7D756C]">Expected:</span> <span class="text-[#FAF7F0]">15</span></div>
+<div><span class="text-[#7D756C]">Your Output:</span> <span class="text-tertiary-fixed font-bold">15</span></div>
+</div>
+</div>
+<!-- Sample 2 Passed Box -->
+<div class="bg-[#1F1C1A] p-space-sm rounded flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-tertiary-fixed font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done</span>
+                  Sample Case 2
+                </span>
+<span class="text-[#8C847C] text-[11px]">9ms</span>
+</div>
+<div class="text-[#C7BDB3] text-body-sm font-body-sm">
+<div><span class="text-[#7D756C]">Input:</span> [3,2,2,4,1,4], 3</div>
+<div><span class="text-[#7D756C]">Expected:</span> <span class="text-[#FAF7F0]">6</span></div>
+<div><span class="text-[#7D756C]">Your Output:</span> <span class="text-tertiary-fixed font-bold">6</span></div>
+</div>
+</div>
+</div>
+<!-- Hidden Test Note -->
+<div class="mt-1 p-2 rounded bg-[#201D1A] text-body-sm font-body-sm text-[#A69E96] flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">verified_user</span>
+<span>
+<strong>Note on Hidden Evaluation:</strong> All 45 hidden test edge-cases run automatically upon clicking <em>Submit Solution</em>. Inputs remain protected to match rigorous technical interview specifications.
+            </span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- FINISH ASSESSMENT CONFIRMATION MODAL (Controlled via Vanilla JS) -->
+<div class="fixed inset-0 bg-[#1C1A18]/65 backdrop-blur-[2px] z-50 hidden items-center justify-center p-4" id="finish-modal-backdrop">
+<div class="w-full max-w-lg bg-surface-bright text-on-surface rounded-xl p-space-xl shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">notification_important</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-headline-md tracking-tight text-on-surface">Finish Assessment #OA-8492?</h3>
+<span class="font-label-ui text-label-ui text-outline">You still have 38 minutes and 24 seconds remaining</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Are you certain you wish to finalize your submission? Once finalized, your coding environment will be permanently locked and your complete algorithmic assessment performance report will be generated.
+      </p>
+<!-- Status Summary Inside Modal -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs text-body-sm font-body-sm">
+<div class="flex justify-between items-center text-on-surface">
+<span>Question 1: Array Partition</span>
+<span class="text-success font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Solved
+          </span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Question 2: Min Capacity Route</span>
+<span class="text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span> Attempted (Code Saved)
+          </span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Question 3: Optimal Grid Flight</span>
+<span class="text-outline font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">circle</span> Unanswered
+          </span>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="cursor-pointer px-space-md py-2.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-ui text-label-ui transition" id="cancel-finish-btn" type="button">
+          Cancel & Keep Solving
+        </button>
+<button class="cursor-pointer px-space-lg py-2.5 rounded bg-primary hover:bg-on-primary-container text-on-primary font-label-ui text-label-ui font-bold shadow-md transition flex items-center gap-2" id="confirm-finish-btn" type="button">
+<span>Confirm & Finish Assessment</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INTERACTIVITY & DRIFT-PROTECTED TIMER LOGIC -->
+<script>
+    (function initWorkspaceEngine() {
+      // Countdown Timer Logic
+      let totalSeconds = 38 * 60 + 24;
+      const timerElement = document.getElementById('assessment-timer');
+      
+      const timerInterval = setInterval(() => {
+        if (totalSeconds <= 0) {
+          clearInterval(timerInterval);
+          if (timerElement) timerElement.textContent = "00:00";
+          return;
+        }
+        totalSeconds--;
+        const mins = Math.floor(totalSeconds / 60);
+        const secs = totalSeconds % 60;
+        if (timerElement) {
+          timerElement.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+          if (totalSeconds < 300) {
+            timerElement.classList.remove('text-surface-bright');
+            timerElement.classList.add('text-error');
+          }
+        }
+      }, 1000);
+
+      // Modal Controls
+      const openModalBtn = document.getElementById('open-finish-modal-btn');
+      const closeModalBtn = document.getElementById('cancel-finish-btn');
+      const modalBackdrop = document.getElementById('finish-modal-backdrop');
+      const confirmFinishBtn = document.getElementById('confirm-finish-btn');
+
+      if (openModalBtn && modalBackdrop) {
+        openModalBtn.addEventListener('click', () => {
+          modalBackdrop.classList.remove('hidden'); modalBackdrop.classList.add('flex');        });
+      }
+
+      if (closeModalBtn && modalBackdrop) {
+        closeModalBtn.addEventListener('click', () => {
+          modalBackdrop.classList.add('hidden'); modalBackdrop.classList.remove('flex');
+        });
+      }
+
+      if (modalBackdrop) {
+        modalBackdrop.addEventListener('click', (e) => {
+          if (e.target === modalBackdrop) {
+            modalBackdrop.classList.add('hidden'); modalBackdrop.classList.remove('flex');
+          }
+        });
+      }
+
+      if (confirmFinishBtn) {
+        confirmFinishBtn.addEventListener('click', () => {
+          confirmFinishBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> Finalizing...';
+          setTimeout(() => {
+            alert('Assessment Submitted Successfully. Generating Diagnostic Performance Report...');
+            if (modalBackdrop) modalBackdrop.classList.add('hidden'); modalBackdrop.classList.remove('flex');
+          }, 800);
+        });
+      }
+
+      // Console Tab Switching Micro-interaction
+      const tabTestcases = document.getElementById('tab-testcases');
+      const tabStdout = document.getElementById('tab-stdout');
+      const consoleOutput = document.getElementById('console-output');
+
+      if (tabTestcases && tabStdout && consoleOutput) {
+        tabStdout.addEventListener('click', () => {
+          tabStdout.classList.add('bg-[#181615]', 'text-[#FAF7F0]');
+          tabStdout.classList.remove('text-[#8C847C]');
+          tabTestcases.classList.remove('bg-[#181615]', 'text-[#FAF7F0]');
+          tabTestcases.classList.add('text-[#8C847C]');
+          consoleOutput.innerHTML = `
+            <div class="text-[#FAF7F0] font-label-code-sm text-label-code-sm py-2">
+              <span class="text-[#7D756C]">[stdout 00:12:44]</span> Initializing binary range [10, 55]<br>
+              <span class="text-[#7D756C]">[stdout 00:12:44]</span> Iteration 1: testing capacity=32 -> days=2 (Valid)<br>
+              <span class="text-[#7D756C]">[stdout 00:12:44]</span> Iteration 2: testing capacity=21 -> days=3 (Valid)<br>
+              <span class="text-[#7D756C]">[stdout 00:12:44]</span> Iteration 3: testing capacity=15 -> days=5 (Valid, optimal)<br>
+              <span class="text-tertiary-fixed font-bold">>> Process completed with exit code 0</span>
+            </div>
+          `;
+        });
+
+        tabTestcases.addEventListener('click', () => {
+          tabTestcases.classList.add('bg-[#181615]', 'text-[#FAF7F0]');
+          tabTestcases.classList.remove('text-[#8C847C]');
+          tabStdout.classList.remove('bg-[#181615]', 'text-[#FAF7F0]');
+          tabStdout.classList.add('text-[#8C847C]');
+          consoleOutput.innerHTML = `
+            <div class="flex items-center justify-between pb-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary-fixed font-bold text-label-ui flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[14px]">check</span>
+                  Sample Tests: 2/2 Passed
+                </span>
+                <span class="text-[#8C847C] font-label-code-sm text-label-code-sm">Runtime: 21ms | Peak Memory: 17.8 MB</span>
+              </div>
+              <span class="text-[#8C847C] text-[11px]">Execution environment: Linux x86_64</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+              <div class="bg-[#1F1C1A] p-space-sm rounded flex flex-col gap-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-ui text-label-ui text-tertiary-fixed font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">done</span> Sample Case 1
+                  </span>
+                  <span class="text-[#8C847C] text-[11px]">12ms</span>
+                </div>
+                <div class="text-[#C7BDB3] text-body-sm font-body-sm">
+                  <div><span class="text-[#7D756C]">Input:</span> [1,2,3,4,5,6,7,8,9,10], 5</div>
+                  <div><span class="text-[#7D756C]">Expected:</span> 15</div>
+                  <div><span class="text-[#7D756C]">Your Output:</span> <span class="text-tertiary-fixed font-bold">15</span></div>
+                </div>
+              </div>
+              <div class="bg-[#1F1C1A] p-space-sm rounded flex flex-col gap-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-ui text-label-ui text-tertiary-fixed font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">done</span> Sample Case 2
+                  </span>
+                  <span class="text-[#8C847C] text-[11px]">9ms</span>
+                </div>
+                <div class="text-[#C7BDB3] text-body-sm font-body-sm">
+                  <div><span class="text-[#7D756C]">Input:</span> [3,2,2,4,1,4], 3</div>
+                  <div><span class="text-[#7D756C]">Expected:</span> 6</div>
+                  <div><span class="text-[#7D756C]">Your Output:</span> <span class="text-tertiary-fixed font-bold">6</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-1 p-2 rounded bg-[#201D1A] text-body-sm font-body-sm text-[#A69E96] flex items-center gap-2">
+              <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">verified_user</span>
+              <span><strong>Note on Hidden Evaluation:</strong> All 45 hidden test edge-cases run automatically upon clicking <em>Submit Solution</em>.</span>
+            </div>
+          `;
+        });
+      }
+
+      // Execution button click feedback
+      const runBtn = document.getElementById('run-code-btn');
+      if (runBtn) {
+        runBtn.addEventListener('click', () => {
+          const originalText = runBtn.innerHTML;
+          runBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span> Compiling...';
+          setTimeout(() => {
+            runBtn.innerHTML = originalText;
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main></body></html>

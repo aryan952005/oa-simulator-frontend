@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"success":"#6B9B78","warning":"#E9B95B","border-subtle":"#E9E4DB","error-container":"#ffdad6","surface-container-highest":"#e4e2e1","primary":"#a43d0d","outline":"#8b7269","on-secondary-fixed":"#331200","on-tertiary-fixed-variant":"#5d4200","surface-container":"#f0eded","surface-container-lowest":"#ffffff","surface-container-low":"#f6f3f2","outline-variant":"#dec0b6","on-surface":"#252525","surface-bright":"#FAF7F0","primary-fixed-dim":"#ffb59a","inverse-primary":"#ffb59a","secondary-fixed":"#ffdbc9","tertiary-container":"#c0943a","tertiary":"#7b5800","on-primary-fixed":"#380d00","on-error-container":"#93000a","on-primary":"#ffffff","tertiary-fixed":"#ffdea5","surface-container-high":"#eae7e7","tertiary-fixed-dim":"#f0bf60","error":"#D96C61","on-secondary-container":"#773a10","on-secondary":"#ffffff","surface-variant":"#e4e2e1","on-tertiary-fixed":"#271900","on-error":"#ffffff","on-background":"#252525","on-primary-container":"#5f1d00","on-secondary-fixed-variant":"#72360c","on-surface-variant":"#77736E","secondary-fixed-dim":"#ffb68d","surface":"#FAF7F0","on-tertiary-container":"#442f00","secondary":"#8f4d22","secondary-container":"#F6A16F","on-tertiary":"#ffffff","primary-fixed":"#ffdbcf","inverse-on-surface":"#f3f0ef","background":"#FAF7F0","on-primary-fixed-variant":"#802a00","primary-container":"#f47745","surface-tint":"#a43d0d","inverse-surface":"#303030","surface-dim":"#dcd9d9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"1rem","2xl":"1.5rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1.5rem","space-xs":"0.25rem",margin:"1rem","margin-desktop":"2rem","space-lg":"1.5rem","space-md":"1rem",gutter:"1rem","space-xl":"2.5rem"},fontFamily:{"label-ui":["Plus Jakarta Sans"],"label-code-lg":["JetBrains Mono"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-code-sm":["JetBrains Mono"]},fontSize:{"label-ui":["13px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"label-code-lg":["14px",{lineHeight:"22px",fontWeight:"500"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-xl-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}]}}}};</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(37,37,37,0.04)]"><div class="h-16 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">terminal</span></span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">OA Simulator</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="landing" href="#">Home</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="#">Features</a><a class="font-label-ui text-label-ui text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Login</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center h-10 px-space-md rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui shadow-[0_4px_12px_rgba(244,119,69,0.28)] hover:bg-secondary hover:text-on-secondary transition-all" data-path="register" href="#">Get Started</a><span class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-ui text-label-ui font-bold">AC</span></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative px-margin-desktop py-space-xl overflow-hidden">
+<!-- Ambient Warm Glow Blurs (No global edge pinning) -->
+<div class="absolute -top-16 left-1/4 w-96 h-96 bg-primary-fixed rounded-full blur-3xl opacity-40 pointer-events-none"></div>
+<div class="absolute top-48 right-10 w-80 h-80 bg-secondary-fixed rounded-full blur-3xl opacity-30 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-xl relative z-10">
+<!-- Left Content Column -->
+<div class="w-full lg:w-1/2 flex flex-col items-start text-left">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-base text-primary">target</span>
+<span class="font-label-ui text-label-ui">Built for Python Coding Interviews & OAs</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface mt-space-md tracking-tight">
+          Your Next Coding Interview <br class="hidden sm:inline"/>
+<span class="text-primary underline decoration-secondary-container decoration-wavy decoration-2">Starts Here.</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-md max-w-xl">
+          Simulate high-stakes company Online Assessments under realistic time limits. Build custom rounds, write Python programs from scratch, and get deep automated performance diagnostic reports.
+        </p>
+<!-- Dual CTAs & Social Proof Signal -->
+<div class="flex flex-wrap items-center gap-space-md mt-space-lg w-full sm:w-auto">
+<a class="inline-flex items-center justify-center h-12 px-space-xl rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui shadow-lg hover:bg-secondary transition-all transform hover:-translate-y-0.5" data-path="register" href="#">
+            Start Practicing
+            <span class="material-symbols-outlined ml-space-xs text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center h-12 px-space-lg rounded-lg bg-surface-container text-on-surface font-label-ui text-label-ui hover:bg-surface-container-high transition-colors" href="#how-it-works">
+            Explore Features
+          </a>
+</div>
+<!-- Metric Badges Under CTAs -->
+<div class="grid grid-cols-3 gap-space-md mt-space-xl pt-space-md border-t-0 w-full max-w-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pure Python 3.11</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">< 150ms</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Execution Speed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">Zero Setup</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">In-browser Runner</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Mockup (Interactive Simulation UI Window) -->
+<div class="w-full lg:w-1/2 relative mt-space-md lg:mt-0">
+<!-- Floating Accent 1: Countdown Clock Pill -->
+<div class="absolute -top-4 right-6 z-20 flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest rounded-full shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface font-bold">45:00 REMAINING</span>
+</div>
+<!-- Floating Accent 2: Performance Teaser Card -->
+<div class="absolute -bottom-6 -left-4 z-20 bg-surface-container-lowest p-space-md rounded-xl shadow-xl max-w-xs flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-xl">insights</span>
+</div>
+<div>
+<div class="font-label-ui text-label-ui text-on-surface">Pace Diagnostics</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Optimal time/problem: 12.4m</div>
+</div>
+</div>
+<!-- Main IDE Preview Frame -->
+<div class="rounded-xl overflow-hidden bg-inverse-surface shadow-2xl p-space-md flex flex-col gap-space-sm text-surface-container-lowest">
+<!-- IDE Top Bar -->
+<div class="flex items-center justify-between pb-space-xs border-b border-outline/20">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="font-label-code-sm text-label-code-sm text-surface-container-highest ml-space-sm">solution.py</span>
+</div>
+<!-- Status Pill -->
+<span class="px-space-sm py-0.5 rounded text-xs font-label-ui bg-primary/20 text-primary-fixed-dim">
+              OA Test Session #402
+            </span>
+</div>
+<!-- Code Workspace Canvas -->
+<div class="grid grid-cols-12 gap-space-xs font-label-code-sm text-label-code-sm py-space-sm select-none">
+<!-- Line numbers -->
+<div class="col-span-1 text-outline text-right pr-space-xs flex flex-col space-y-1">
+<span>01</span>
+<span>02</span>
+<span>03</span>
+<span>04</span>
+<span>05</span>
+<span>06</span>
+<span>07</span>
+</div>
+<!-- Syntax Code Lines -->
+<div class="col-span-11 flex flex-col space-y-1 text-surface-bright">
+<p><span class="text-secondary-fixed">def</span> <span class="text-tertiary-fixed">minMeetingRooms</span>(intervals: list[list[int]]) -> int:</p>
+<p class="pl-4 text-surface-variant">if not intervals: return 0</p>
+<p class="pl-4 text-secondary-fixed">intervals.sort(key=<span class="text-primary-fixed-dim">lambda</span> x: x[0])</p>
+<p class="pl-4 text-surface-variant">heap = []  <span class="text-outline"># track earliest end time</span></p>
+<p class="pl-4 text-secondary-fixed">for start, end <span class="text-secondary-fixed">in</span> intervals:</p>
+<p class="pl-8 text-surface-variant">if heap and heap[0] <= start: heappop(heap)</p>
+<p class="pl-8 text-primary-fixed">heappush(heap, end); <span class="text-secondary-fixed">return</span> len(heap)</p>
+</div>
+</div>
+<!-- Console & Output Sub-Card -->
+<div class="bg-surface-dim/40 rounded-lg p-space-sm mt-space-xs text-on-surface">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span class="font-label-ui text-label-ui text-surface-container-lowest">Sample Test Suite: 3/3 Passed</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed">Execution: 42ms</span>
+</div>
+<div class="font-label-code-sm text-label-code-sm text-surface-container-highest p-space-xs rounded bg-inverse-surface/80">
+              Input: [[0,30],[5,10],[15,20]] → Expected: 2 → Output: 2
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Separator / Warm Divider Bar -->
+<div class="w-full max-w-7xl mx-auto px-margin-desktop py-space-sm">
+<div class="h-0.5 w-full bg-surface-container-high rounded-full"></div>
+</div>
+<!-- How It Works Section (4-Step Visual Flow) -->
+<section class="px-margin-desktop py-space-xl max-w-7xl mx-auto w-full" id="how-it-works">
+<!-- Header -->
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto">
+<span class="font-label-ui text-label-ui uppercase tracking-widest text-primary">The Process</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Realistic Assessment Workflow</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+        Four calculated phases designed to rebuild the muscle memory, cognitive discipline, and speed demanded by top-tier technical rounds.
+      </p>
+</div>
+<!-- 4 Step Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mt-space-lg">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between transition-all hover:shadow-lg hover:-translate-y-1 relative group border border-border-subtle">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-on-secondary-fixed font-bold mb-space-md">
+            01
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Build Your Round</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pick 1 to 5 questions, select algorithmic topics, and filter across Easy, Medium, and Hard tiers.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-primary font-label-ui text-label-ui">
+<span>Topic-Weighted</span>
+<span class="material-symbols-outlined text-base">tune</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between transition-all hover:shadow-lg hover:-translate-y-1 relative group border border-border-subtle">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-on-primary-fixed font-bold mb-space-md">
+            02
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Solve Under Pressure</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Full-screen environment with synced countdown timer, autosave checkpointing, and restricted workspace settings.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-primary font-label-ui text-label-ui">
+<span>Autosave On</span>
+<span class="material-symbols-outlined text-base">timer</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between transition-all hover:shadow-lg hover:-translate-y-1 relative group border border-border-subtle">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-on-secondary-fixed font-bold mb-space-md">
+            03
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Run and Submit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Test public sample cases with live stdout diagnostics, then submit code against invisible verification tests.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-primary font-label-ui text-label-ui">
+<span>Stdout Feedback</span>
+<span class="material-symbols-outlined text-base">terminal</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between transition-all hover:shadow-lg hover:-translate-y-1 relative group border border-border-subtle">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center font-headline-sm text-headline-sm text-on-primary font-bold mb-space-md">
+            04
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Analyze Results</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Instant rule-based reports: algorithmic grading, time map allocation, pacing benchmarks, and failure flags.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-primary font-label-ui text-label-ui">
+<span>Instant Metrics</span>
+<span class="material-symbols-outlined text-base">assessment</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Feature Showcase Mosaic -->
+<section class="px-margin-desktop py-space-xl max-w-7xl mx-auto w-full">
+<!-- Asymmetric Editorial Banner introducing Features -->
+<div class="bg-surface-container-low rounded-xl p-space-lg lg:p-space-xl flex flex-col lg:flex-row items-center gap-space-lg mb-space-lg">
+<div class="w-full lg:w-2/3">
+<span class="font-label-ui text-label-ui text-primary uppercase">Precision Platform</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Built for Rigorous Preparation, Free of Noise.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm max-w-2xl">
+          Online assessments demand both speed and syntactic intuition. Our platform pairs distraction-free Python execution with authentic simulation constraints.
+        </p>
+</div>
+<!-- Inline Data Visualizer (SVG Progress & Stats Ring) -->
+<div class="w-full lg:w-1/3 flex items-center justify-center">
+<div class="relative w-40 h-40 flex items-center justify-center bg-surface-container-lowest rounded-full shadow-inner">
+<svg class="w-36 h-36 transform -rotate-90" viewbox="0 0 100 100">
+<circle class="text-surface-container-high" cx="50" cy="50" fill="none" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary-container" cx="50" cy="50" fill="none" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="62.8" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">75%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">OA Pass Rate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Features 6-Card Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between border border-border-subtle">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">tune</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Custom Assessment Builder</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Configure flexible 5 to 180 minute timers tailored to your specific recruitment interview goals.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center font-label-code-sm text-label-code-sm text-outline">
+          PARAM: 5m – 180m
+        </div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between border border-border-subtle">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">alarm</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Timed Coding Challenges</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Server-synchronized countdown timers that reproduce the authentic tension and pacing of real assessments.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center font-label-code-sm text-label-code-sm text-outline">
+          SYNC: DRIFT-PROTECTED
+        </div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between border border-border-subtle">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">code</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Pure Python Code Editor</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Distraction-free workspace with line numbers, warm dark contrast, and optimal typography for rapid coding.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center font-label-code-sm text-label-code-sm text-outline">
+          RUNTIME: PYTHON 3.11.8
+        </div>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between border border-border-subtle">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">play_circle</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Instant Sample Testing</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Live in-browser terminal feedback showing inputs, outputs, assertions, and custom stdout traces.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center font-label-code-sm text-label-code-sm text-outline">
+          STDOUT: CAPTURED LIVE
+        </div>
+</div>
+<!-- Feature 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between border border-border-subtle">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">visibility_off</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Hidden Test Evaluation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Realistic verification against concealed boundary cases without leaking proprietary answers.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center font-label-code-sm text-label-code-sm text-outline">
+          TESTS: CONCEALED EDGE CASES
+        </div>
+</div>
+<!-- Feature 6 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between border border-border-subtle">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">query_stats</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Detailed Performance Reports</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Rule-based grades (Excellent, Strong, Partial), timing allocation, failed submittals, and targeted next rounds.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center font-label-code-sm text-label-code-sm text-outline">
+          DIAGNOSTIC: MULTI-AXIS SCORE
+        </div>
+</div>
+</div>
+</section>
+<!-- Motivational Callout Banner -->
+<section class="px-margin-desktop py-space-xl max-w-7xl mx-auto w-full">
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg lg:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-sm">
+<!-- Decorative Warm Wave Background Accent -->
+<div class="absolute -right-12 -bottom-12 w-64 h-64 bg-secondary-fixed rounded-full blur-2xl opacity-50 pointer-events-none"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="font-label-ui text-label-ui text-primary uppercase">Confidence Through Discipline</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+          Every Attempt Makes You Better.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+          Consistency builds confidence. Master your algorithmic speed, edge-case vigilance, and submission timing before your real assessment day arrives.
+        </p>
+</div>
+<div class="relative z-10 w-full md:w-auto">
+<a class="inline-flex items-center justify-center w-full md:w-auto h-12 px-space-xl rounded-lg bg-primary-container text-on-primary font-label-ui text-label-ui shadow-lg hover:bg-secondary transition-all" data-path="register" href="#">
+          Create Your First Round
+          <span class="material-symbols-outlined ml-space-xs text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(37,37,37,0.03)] py-space-xl"><div class="max-w-7xl mx-auto px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-on-surface">OA Simulator</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Practice Smart. Code Fast. Perform Better.</p></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Curriculum</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">FAQ</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms</a></div><p class="font-body-sm text-body-sm text-outline">© 2024 OA Simulator. Crafted for technical excellence.</p></div></footer></body></html>
