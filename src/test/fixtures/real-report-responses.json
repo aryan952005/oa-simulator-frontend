@@ -1,0 +1,1624 @@
+{
+  "noSubmissions": {
+    "slots": [
+      {
+        "topic": "strings",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "arrays",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 30,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9ed5601be5f5c40e800",
+        "status": "FINISHED",
+        "durationMin": 30,
+        "createdAt": "2026-11-13T06:12:53.166Z",
+        "startedAt": "2026-11-13T06:12:53.169Z",
+        "deadline": "2026-11-13T06:42:53.169Z",
+        "finishedAt": "2026-11-13T06:15:53.177Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T06:15:53.178Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 0
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "opened": false,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 0
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9ed5601be5f5c40e800",
+        "durationMin": 30,
+        "startedAt": "2026-11-13T06:12:53.169Z",
+        "finishedAt": "2026-11-13T06:15:53.177Z",
+        "finishReason": "MANUAL",
+        "grade": "NEEDS_WORK",
+        "summary": {
+          "solved": 0,
+          "total": 2,
+          "timeUsedSec": 180,
+          "timeAllottedSec": 1800,
+          "timeLeftSec": 1620
+        },
+        "headline": {
+          "rule": null,
+          "question": null,
+          "values": {
+            "unsolved": 2
+          },
+          "text": "Time ran out with 2 question(s) unsolved."
+        },
+        "insights": [],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 0,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 0,
+            "failedSubmits": 0,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": null,
+            "flags": []
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "result": "NOT_OPENED",
+            "activeMin": 0,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 0,
+            "failedSubmits": 0,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": null,
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 30,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": []
+            },
+            {
+              "index": 2,
+              "activeMinutes": []
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "Repeat the round and aim to beat your result.",
+          "slots": [
+            {
+              "topic": "strings",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "arrays",
+              "difficulty": "easy"
+            }
+          ],
+          "durationMin": 30
+        }
+      }
+    },
+    "verdicts": []
+  },
+  "excellent": {
+    "slots": [
+      {
+        "topic": "strings",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "arrays",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 60,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9ed5601be5f5c40e819",
+        "status": "FINISHED",
+        "durationMin": 60,
+        "createdAt": "2026-11-13T06:17:53.184Z",
+        "startedAt": "2026-11-13T06:17:53.185Z",
+        "deadline": "2026-11-13T07:17:53.185Z",
+        "finishedAt": "2026-11-13T06:23:53.734Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T06:23:53.736Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9ed5601be5f5c40e819",
+        "durationMin": 60,
+        "startedAt": "2026-11-13T06:17:53.185Z",
+        "finishedAt": "2026-11-13T06:23:53.734Z",
+        "finishReason": "MANUAL",
+        "grade": "EXCELLENT",
+        "summary": {
+          "solved": 2,
+          "total": 2,
+          "timeUsedSec": 360,
+          "timeAllottedSec": 3600,
+          "timeLeftSec": 3240
+        },
+        "headline": {
+          "rule": "TOO_EASY",
+          "question": null,
+          "values": {
+            "left": 54
+          },
+          "text": "You solved everything on the first try with 54 minutes to spare. This level is not challenging you."
+        },
+        "insights": [],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 1,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 14,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 1,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 28,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 60,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                1
+              ]
+            },
+            {
+              "index": 2,
+              "activeMinutes": [
+                4
+              ]
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "You solved this level with time to spare.",
+          "slots": [
+            {
+              "topic": "strings",
+              "difficulty": "medium"
+            },
+            {
+              "topic": "arrays",
+              "difficulty": "medium"
+            }
+          ],
+          "durationMin": 40
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "q1 run",
+        "status": 200
+      },
+      {
+        "label": "q1 submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      },
+      {
+        "label": "q2 run",
+        "status": 200
+      },
+      {
+        "label": "q2 submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      }
+    ]
+  },
+  "strong": {
+    "slots": [
+      {
+        "topic": "hashing",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "sorting",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "math",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 90,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9ed5601be5f5c40e855",
+        "status": "FINISHED",
+        "durationMin": 90,
+        "createdAt": "2026-11-13T06:25:53.740Z",
+        "startedAt": "2026-11-13T06:25:53.741Z",
+        "deadline": "2026-11-13T07:55:53.741Z",
+        "finishedAt": "2026-11-13T07:05:54.626Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T07:05:54.627Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "hashing",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 2
+          },
+          {
+            "index": 2,
+            "topic": "sorting",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          },
+          {
+            "index": 3,
+            "topic": "math",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9ed5601be5f5c40e855",
+        "durationMin": 90,
+        "startedAt": "2026-11-13T06:25:53.741Z",
+        "finishedAt": "2026-11-13T07:05:54.626Z",
+        "finishReason": "MANUAL",
+        "grade": "STRONG",
+        "summary": {
+          "solved": 3,
+          "total": 3,
+          "timeUsedSec": 2400,
+          "timeAllottedSec": 5400,
+          "timeLeftSec": 3000
+        },
+        "headline": {
+          "rule": null,
+          "question": null,
+          "values": {
+            "total": 3
+          },
+          "text": "All 3 solved within the time."
+        },
+        "insights": [],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "hashing",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 2,
+            "runCount": 1,
+            "submitCount": 2,
+            "failedSubmits": 1,
+            "runtimeMs": 14,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          },
+          {
+            "index": 2,
+            "topic": "sorting",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 2,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 15,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          },
+          {
+            "index": 3,
+            "topic": "math",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 2,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 24,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 90,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                2
+              ]
+            },
+            {
+              "index": 2,
+              "activeMinutes": [
+                12
+              ]
+            },
+            {
+              "index": 3,
+              "activeMinutes": [
+                22
+              ]
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "Repeat the round and aim to beat your result.",
+          "slots": [
+            {
+              "topic": "hashing",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "sorting",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "math",
+              "difficulty": "easy"
+            }
+          ],
+          "durationMin": 90
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "q1 run",
+        "status": 200
+      },
+      {
+        "label": "q1 wrong",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q1 good",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      },
+      {
+        "label": "q2 run",
+        "status": 200
+      },
+      {
+        "label": "q2 submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      },
+      {
+        "label": "q3 run",
+        "status": 200
+      },
+      {
+        "label": "q3 submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      }
+    ]
+  },
+  "struggle": {
+    "slots": [
+      {
+        "topic": "strings",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "arrays",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 40,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9ee5601be5f5c40e8ac",
+        "status": "FINISHED",
+        "durationMin": 40,
+        "createdAt": "2026-11-13T07:07:54.632Z",
+        "startedAt": "2026-11-13T07:07:54.633Z",
+        "deadline": "2026-11-13T07:47:54.633Z",
+        "finishedAt": "2026-11-13T07:27:55.913Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T07:27:55.915Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 5
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9ee5601be5f5c40e8ac",
+        "durationMin": 40,
+        "startedAt": "2026-11-13T07:07:54.633Z",
+        "finishedAt": "2026-11-13T07:27:55.913Z",
+        "finishReason": "MANUAL",
+        "grade": "SOLVED_WITH_STRUGGLE",
+        "summary": {
+          "solved": 2,
+          "total": 2,
+          "timeUsedSec": 1201,
+          "timeAllottedSec": 2400,
+          "timeLeftSec": 1199
+        },
+        "headline": {
+          "rule": "MANY_FAILED_SUBMITS",
+          "question": 1,
+          "values": {
+            "count": 4
+          },
+          "text": "Q1 took 4 failed submits. In a real OA, wrong submissions can cost minutes or points. Run the samples and test edge cases before you submit."
+        },
+        "insights": [],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 1,
+            "runCount": 1,
+            "submitCount": 5,
+            "failedSubmits": 4,
+            "runtimeMs": 13,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": [
+              "MANY_FAILED_SUBMITS",
+              "BLIND_SUBMITS"
+            ]
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 1,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 27,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 40,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                1
+              ]
+            },
+            {
+              "index": 2,
+              "activeMinutes": [
+                9
+              ]
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "Same round again, aiming for first-try solutions with a safe runtime.",
+          "slots": [
+            {
+              "topic": "strings",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "arrays",
+              "difficulty": "easy"
+            }
+          ],
+          "durationMin": 40
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "q1 run",
+        "status": 200
+      },
+      {
+        "label": "q1 wrong 0",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q1 wrong 1",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q1 wrong 2",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q1 wrong 3",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q1 good",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      },
+      {
+        "label": "q2 run",
+        "status": 200
+      },
+      {
+        "label": "q2 submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      }
+    ]
+  },
+  "triage": {
+    "slots": [
+      {
+        "topic": "strings",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "arrays",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "hashing",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 60,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9ef5601be5f5c40e90c",
+        "status": "FINISHED",
+        "durationMin": 60,
+        "createdAt": "2026-11-13T07:29:55.919Z",
+        "startedAt": "2026-11-13T07:29:55.920Z",
+        "deadline": "2026-11-13T08:29:55.920Z",
+        "finishedAt": "2026-11-13T07:46:56.435Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T07:46:56.437Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 1
+          },
+          {
+            "index": 3,
+            "topic": "hashing",
+            "difficulty": "easy",
+            "opened": false,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 0
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9ef5601be5f5c40e90c",
+        "durationMin": 60,
+        "startedAt": "2026-11-13T07:29:55.920Z",
+        "finishedAt": "2026-11-13T07:46:56.435Z",
+        "finishReason": "MANUAL",
+        "grade": "PARTIAL",
+        "summary": {
+          "solved": 1,
+          "total": 3,
+          "timeUsedSec": 1020,
+          "timeAllottedSec": 3600,
+          "timeLeftSec": 2580
+        },
+        "headline": {
+          "rule": "TRIAGE",
+          "question": 2,
+          "values": {
+            "minutes": 13,
+            "other": "Q3 was never opened",
+            "expected": 12,
+            "possible": 2,
+            "total": 3
+          },
+          "text": "You spent 13 minutes on Q2 without solving it, while Q3 was never opened. Moving on after about 12 minutes could have meant 2 of 3 solved."
+        },
+        "insights": [
+          {
+            "rule": "EDGE_CASES",
+            "question": 2,
+            "values": {},
+            "text": "Q2 passed the samples but gave wrong answers on some hidden tests. Think about edge cases: empty or minimum input, maximum values, duplicates and negative numbers."
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 1,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 16,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 13,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 1,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "WRONG_ON_HIDDEN",
+            "flags": []
+          },
+          {
+            "index": 3,
+            "topic": "hashing",
+            "difficulty": "easy",
+            "result": "NOT_OPENED",
+            "activeMin": 0,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 0,
+            "failedSubmits": 0,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": null,
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 60,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                1
+              ]
+            },
+            {
+              "index": 2,
+              "activeMinutes": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ]
+            },
+            {
+              "index": 3,
+              "activeMinutes": []
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "Practise choosing the order: skim all questions and start with the easiest.",
+          "slots": [
+            {
+              "topic": "strings",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "arrays",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "hashing",
+              "difficulty": "easy"
+            }
+          ],
+          "durationMin": 60
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "q1 run",
+        "status": 200
+      },
+      {
+        "label": "q1 submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      },
+      {
+        "label": "q2 wrong",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      }
+    ]
+  },
+  "failures": {
+    "slots": [
+      {
+        "topic": "strings",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "arrays",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "hashing",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "sorting",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "math",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 150,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9f05601be5f5c40e96b",
+        "status": "FINISHED",
+        "durationMin": 150,
+        "createdAt": "2026-11-13T07:48:56.441Z",
+        "startedAt": "2026-11-13T07:48:56.442Z",
+        "deadline": "2026-11-13T10:18:56.442Z",
+        "finishedAt": "2026-11-13T08:18:58.768Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T08:18:58.769Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 1
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 1
+          },
+          {
+            "index": 3,
+            "topic": "hashing",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 1
+          },
+          {
+            "index": 4,
+            "topic": "sorting",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 1
+          },
+          {
+            "index": 5,
+            "topic": "math",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 1,
+            "submitCount": 0
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9f05601be5f5c40e96b",
+        "durationMin": 150,
+        "startedAt": "2026-11-13T07:48:56.442Z",
+        "finishedAt": "2026-11-13T08:18:58.768Z",
+        "finishReason": "MANUAL",
+        "grade": "NEEDS_WORK",
+        "summary": {
+          "solved": 0,
+          "total": 5,
+          "timeUsedSec": 1802,
+          "timeAllottedSec": 9000,
+          "timeLeftSec": 7198
+        },
+        "headline": {
+          "rule": "TOO_SLOW",
+          "question": 2,
+          "values": {},
+          "text": "Q2 ran out of time on at least one test. Your logic may be right, but the algorithm needs to be faster. Check the constraints to see what complexity you need."
+        },
+        "insights": [
+          {
+            "rule": "SAMPLE_FAIL",
+            "question": 4,
+            "values": {},
+            "text": "Q4 still failed a sample test. Re-read the statement and trace the sample by hand against your code."
+          },
+          {
+            "rule": "CRASH",
+            "question": 3,
+            "values": {},
+            "text": "Q3 crashed on some input. Check index bounds, empty input, type conversions and division by zero."
+          },
+          {
+            "rule": "SYNTAX",
+            "question": 1,
+            "values": {},
+            "text": "Q1 ended with a syntax error. Run your code before you submit so errors show up early."
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 1,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "SYNTAX_ERROR",
+            "flags": []
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 1,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "TOO_SLOW",
+            "flags": []
+          },
+          {
+            "index": 3,
+            "topic": "hashing",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 1,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "CRASH",
+            "flags": []
+          },
+          {
+            "index": 4,
+            "topic": "sorting",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 1,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "WRONG_ON_SAMPLE",
+            "flags": []
+          },
+          {
+            "index": 5,
+            "topic": "math",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": 2,
+            "runCount": 1,
+            "submitCount": 0,
+            "failedSubmits": 0,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "NOT_SUBMITTED",
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 150,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                2
+              ]
+            },
+            {
+              "index": 2,
+              "activeMinutes": [
+                2
+              ]
+            },
+            {
+              "index": 3,
+              "activeMinutes": [
+                2
+              ]
+            },
+            {
+              "index": 4,
+              "activeMinutes": [
+                2
+              ]
+            },
+            {
+              "index": 5,
+              "activeMinutes": [
+                2
+              ]
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "Practise the topics that cost you this round.",
+          "slots": [
+            {
+              "topic": "strings",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "arrays",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "hashing",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "sorting",
+              "difficulty": "easy"
+            },
+            {
+              "topic": "math",
+              "difficulty": "easy"
+            }
+          ],
+          "durationMin": 60
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "q1 syntax",
+        "status": 200,
+        "verdict": "COMPILATION_ERROR"
+      },
+      {
+        "label": "q2 slow",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q3 crash",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q4 sample",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q5 run",
+        "status": 200
+      }
+    ]
+  },
+  "hiddenAndRisky": {
+    "slots": [
+      {
+        "topic": "strings",
+        "difficulty": "easy"
+      },
+      {
+        "topic": "arrays",
+        "difficulty": "easy"
+      }
+    ],
+    "durationMin": 60,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6a9f25601be5f5c40e9be",
+        "status": "FINISHED",
+        "durationMin": 60,
+        "createdAt": "2026-11-13T08:20:58.773Z",
+        "startedAt": "2026-11-13T08:20:58.774Z",
+        "deadline": "2026-11-13T09:20:58.774Z",
+        "finishedAt": "2026-11-13T09:20:58.774Z",
+        "finishReason": "EXPIRED",
+        "serverTime": "2026-11-13T09:21:23.733Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": false,
+            "runCount": 0,
+            "submitCount": 1
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "opened": true,
+            "solved": true,
+            "runCount": 0,
+            "submitCount": 1
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6a9f25601be5f5c40e9be",
+        "durationMin": 60,
+        "startedAt": "2026-11-13T08:20:58.774Z",
+        "finishedAt": "2026-11-13T09:20:58.774Z",
+        "finishReason": "EXPIRED",
+        "grade": "PARTIAL",
+        "summary": {
+          "solved": 1,
+          "total": 2,
+          "timeUsedSec": 3600,
+          "timeAllottedSec": 3600,
+          "timeLeftSec": 0
+        },
+        "headline": {
+          "rule": "EDGE_CASES",
+          "question": 1,
+          "values": {},
+          "text": "Q1 passed the samples but gave wrong answers on some hidden tests. Think about edge cases: empty or minimum input, maximum values, duplicates and negative numbers."
+        },
+        "insights": [
+          {
+            "rule": "RISKY_RUNTIME",
+            "question": 2,
+            "values": {
+              "runtime": 1.68,
+              "limit": 2
+            },
+            "text": "Q2 passed, but its slowest test used 1.68 s of a 2 s limit. A bigger test could time out, so look for a faster approach."
+          }
+        ],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "strings",
+            "difficulty": "easy",
+            "result": "NOT_SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 1,
+            "runtimeMs": null,
+            "timeLimitMs": null,
+            "failureReason": "WRONG_ON_HIDDEN",
+            "flags": []
+          },
+          {
+            "index": 2,
+            "topic": "arrays",
+            "difficulty": "easy",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 12,
+            "firstRunAfterMin": null,
+            "runCount": 0,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 1677,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": [
+              "RISKY_RUNTIME"
+            ]
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 60,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                1
+              ]
+            },
+            {
+              "index": 2,
+              "activeMinutes": [
+                2
+              ]
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "Practise the topics that cost you this round.",
+          "slots": [
+            {
+              "topic": "strings",
+              "difficulty": "easy"
+            }
+          ],
+          "durationMin": 12
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "q1 wrong",
+        "status": 200,
+        "verdict": "NOT_ACCEPTED"
+      },
+      {
+        "label": "q2 slow-but-ok",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      }
+    ]
+  },
+  "hardExcellent": {
+    "slots": [
+      {
+        "topic": "sorting",
+        "difficulty": "hard"
+      }
+    ],
+    "durationMin": 60,
+    "round": {
+      "status": 200,
+      "body": {
+        "id": "6af6aa065601be5f5c40e9eb",
+        "status": "FINISHED",
+        "durationMin": 60,
+        "createdAt": "2026-11-13T09:23:23.740Z",
+        "startedAt": "2026-11-13T09:23:23.741Z",
+        "deadline": "2026-11-13T10:23:23.741Z",
+        "finishedAt": "2026-11-13T09:27:24.041Z",
+        "finishReason": "MANUAL",
+        "serverTime": "2026-11-13T09:27:24.042Z",
+        "slots": [
+          {
+            "index": 1,
+            "topic": "sorting",
+            "difficulty": "hard",
+            "opened": true,
+            "solved": true,
+            "runCount": 1,
+            "submitCount": 1
+          }
+        ]
+      }
+    },
+    "report": {
+      "status": 200,
+      "body": {
+        "roundId": "6af6aa065601be5f5c40e9eb",
+        "durationMin": 60,
+        "startedAt": "2026-11-13T09:23:23.741Z",
+        "finishedAt": "2026-11-13T09:27:24.041Z",
+        "finishReason": "MANUAL",
+        "grade": "EXCELLENT",
+        "summary": {
+          "solved": 1,
+          "total": 1,
+          "timeUsedSec": 240,
+          "timeAllottedSec": 3600,
+          "timeLeftSec": 3360
+        },
+        "headline": {
+          "rule": "TOO_EASY",
+          "question": null,
+          "values": {
+            "left": 56
+          },
+          "text": "You solved everything on the first try with 56 minutes to spare. This level is not challenging you."
+        },
+        "insights": [],
+        "questions": [
+          {
+            "index": 1,
+            "topic": "sorting",
+            "difficulty": "hard",
+            "result": "SOLVED",
+            "activeMin": 1,
+            "expectedMin": 30,
+            "firstRunAfterMin": 1,
+            "runCount": 1,
+            "submitCount": 1,
+            "failedSubmits": 0,
+            "runtimeMs": 58,
+            "timeLimitMs": 2000,
+            "failureReason": null,
+            "flags": []
+          }
+        ],
+        "timeMap": {
+          "totalMinutes": 60,
+          "questions": [
+            {
+              "index": 1,
+              "activeMinutes": [
+                1
+              ]
+            }
+          ]
+        },
+        "nextRound": {
+          "reason": "You solved this level with time to spare.",
+          "slots": [
+            {
+              "topic": "sorting",
+              "difficulty": "hard"
+            },
+            {
+              "topic": "sorting",
+              "difficulty": "hard"
+            }
+          ],
+          "durationMin": 60
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "label": "run",
+        "status": 200
+      },
+      {
+        "label": "submit",
+        "status": 200,
+        "verdict": "ACCEPTED"
+      }
+    ]
+  },
+  "createNext201": {
+    "status": 201,
+    "body": {
+      "id": "6af6aa075601be5f5c40ea13",
+      "status": "READY",
+      "durationMin": 40,
+      "createdAt": "2026-11-13T09:27:24.046Z",
+      "startedAt": null,
+      "deadline": null,
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-13T09:27:24.046Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "arrays",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "createNext422": {
+    "status": 422,
+    "body": {
+      "error": {
+        "code": "NOT_ENOUGH_PROBLEMS",
+        "message": "There are not enough problems for some questions",
+        "details": [
+          {
+            "slots": [
+              1,
+              2
+            ],
+            "topic": "sorting",
+            "difficulty": "hard",
+            "requested": 2,
+            "available": 1
+          }
+        ]
+      }
+    }
+  },
+  "reportOfReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_FINISHED",
+        "message": "The report is available once the round is finished"
+      }
+    }
+  },
+  "reportOfActive": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_FINISHED",
+        "message": "The report is available once the round is finished"
+      }
+    }
+  },
+  "activeRoundSummary": {
+    "status": 200,
+    "body": {
+      "id": "6af6aa075601be5f5c40ea1c",
+      "status": "ACTIVE",
+      "durationMin": 10,
+      "createdAt": "2026-11-13T09:27:24.053Z",
+      "startedAt": "2026-11-13T09:27:24.055Z",
+      "deadline": "2026-11-13T09:37:24.055Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-13T09:27:24.057Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "strings",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "reportUnknown": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Round not found"
+      }
+    }
+  },
+  "reportMalformedId": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Not found"
+      }
+    }
+  },
+  "reportNoToken": {
+    "status": 401,
+    "body": {
+      "error": {
+        "code": "UNAUTHORIZED",
+        "message": "Authentication required"
+      }
+    }
+  },
+  "reportOfSomeoneElse": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Round not found"
+      }
+    }
+  },
+  "createNextReadyLimit": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "READY_LIMIT_REACHED",
+        "message": "You already have 20 rounds that have not been started. Start or delete one first."
+      }
+    }
+  },
+  "_metaF6": {
+    "note": "F6 responses captured from the real backend code (seeded in-memory MongoDB, real Python runner, controllable clock).",
+    "capturedAt": "2026-11-13T06:11:19.179Z"
+  }
+}

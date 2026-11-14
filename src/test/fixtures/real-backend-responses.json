@@ -1,0 +1,152 @@
+{
+  "registerOk": {
+    "status": 201,
+    "body": {
+      "token": "<jwt>",
+      "user": {
+        "id": "6af430843ab53f0e2045f778",
+        "name": "Alex Chen",
+        "email": "f1-capture-1794388100628@example.test"
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "registerEmailTaken": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "EMAIL_TAKEN",
+        "message": "This email is already registered"
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "registerValidationAllBad": {
+    "status": 400,
+    "body": {
+      "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "Invalid input",
+        "details": [
+          {
+            "field": "body.name",
+            "message": "String must contain at least 2 character(s)"
+          },
+          {
+            "field": "body.email",
+            "message": "Invalid email"
+          },
+          {
+            "field": "body.password",
+            "message": "must be 8 to 72 bytes long"
+          }
+        ]
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "registerPasswordTooLongBytes": {
+    "status": 400,
+    "body": {
+      "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "Invalid input",
+        "details": [
+          {
+            "field": "body.password",
+            "message": "must be 8 to 72 bytes long"
+          }
+        ]
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "registerPasswordMultiByteOk": {
+    "status": 201,
+    "body": {
+      "token": "<jwt>",
+      "user": {
+        "id": "6af430843ab53f0e2045f77c",
+        "name": "Multi Byte",
+        "email": "multi-f1-capture-1794388100628@example.test"
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "loginWrongPassword": {
+    "status": 401,
+    "body": {
+      "error": {
+        "code": "INVALID_CREDENTIALS",
+        "message": "Invalid email or password"
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "loginUnknownEmail": {
+    "status": 401,
+    "body": {
+      "error": {
+        "code": "INVALID_CREDENTIALS",
+        "message": "Invalid email or password"
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "loginValidationBad": {
+    "status": 400,
+    "body": {
+      "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "Invalid input",
+        "details": [
+          {
+            "field": "body.email",
+            "message": "Invalid email"
+          },
+          {
+            "field": "body.password",
+            "message": "must be 8 to 72 bytes long"
+          }
+        ]
+      }
+    },
+    "retryAfter": null,
+    "allowOrigin": "http://localhost:5173"
+  },
+  "tooManyRequests": {
+    "status": 429,
+    "body": {
+      "error": {
+        "code": "TOO_MANY_REQUESTS",
+        "message": "Too many requests, try again later"
+      }
+    },
+    "retryAfter": "60",
+    "allowOrigin": "http://localhost:5173"
+  },
+  "_meta": {
+    "note": "Captured from the real backend code (in-memory MongoDB).",
+    "capturedAt": "2026-11-11T09:08:20.920Z",
+    "attemptsUntil429": 3
+  },
+  "loginOk": {
+    "status": 200,
+    "body": {
+      "token": "<jwt>",
+      "user": {
+        "id": "6af430d53ab53f0e2045f783",
+        "name": "Alex Chen",
+        "email": "f1-login-1794388180998@example.test"
+      }
+    },
+    "retryAfter": null
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "openReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_ACTIVE",
+        "message": "The round has not been started"
+      }
+    }
+  },
+  "saveReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_ACTIVE",
+        "message": "The round has not been started"
+      }
+    }
+  },
+  "finishReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_ACTIVE",
+        "message": "The round has not been started"
+      }
+    }
+  },
+  "start": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8f8e",
+      "status": "ACTIVE",
+      "durationMin": 5,
+      "createdAt": "2026-11-12T16:00:01.697Z",
+      "startedAt": "2026-11-12T16:00:01.699Z",
+      "deadline": "2026-11-12T16:05:01.699Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T16:00:01.699Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "getActiveBeforeOpen": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8f8e",
+      "status": "ACTIVE",
+      "durationMin": 5,
+      "createdAt": "2026-11-12T16:00:01.697Z",
+      "startedAt": "2026-11-12T16:00:01.699Z",
+      "deadline": "2026-11-12T16:05:01.699Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T16:00:01.702Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "openQ1": {
+    "status": 200,
+    "body": {
+      "index": 1,
+      "title": "Longest Calm Stretch",
+      "topic": "arrays",
+      "difficulty": "easy",
+      "statement": "A sensor recorded `n` readings `a[1], a[2], ..., a[n]` in this order, and you are given a tolerance `d`.\n\nA *stretch* is one or more consecutive readings `a[l], a[l+1], ..., a[r]` (`1 ≤ l ≤ r ≤ n`). A stretch is *calm* if every two neighbouring readings inside it differ by at most `d`, that is, `|a[i] - a[i+1]| ≤ d` for every `i` with `l ≤ i < r`. A stretch of one reading is always calm.\n\nFind the length (the number of readings, `r - l + 1`) of the longest calm stretch.",
+      "inputFormat": "Line 1: two integers `n` and `d`, separated by a single space.\nLine 2: `n` integers `a[1] ... a[n]`, separated by single spaces.",
+      "outputFormat": "Print one integer: the length of the longest calm stretch.",
+      "constraints": "1 ≤ n ≤ 200000\n0 ≤ d ≤ 2000000000\n-1000000000 ≤ a[i] ≤ 1000000000",
+      "samples": [
+        {
+          "input": "7 2\n5 -1 1 3 2 10 12\n",
+          "output": "4",
+          "explanation": "Neighbour differences are 6, 2, 2, 1, 8, 2. The differences 6 and 8 are larger than d = 2, so they split the readings into the calm stretches [5], [-1 1 3 2] and [10 12]. The longest has 4 readings. Answer: 4."
+        },
+        {
+          "input": "5 0\n4 4 4 9 9\n",
+          "output": "3",
+          "explanation": "With d = 0 neighbours must be equal. The calm stretches are [4 4 4] and [9 9]. Answer: 3."
+        }
+      ],
+      "code": "",
+      "serverTime": "2026-11-12T16:00:01.704Z"
+    }
+  },
+  "openQ1Again": {
+    "status": 200,
+    "body": {
+      "index": 1,
+      "title": "Longest Calm Stretch",
+      "topic": "arrays",
+      "difficulty": "easy",
+      "statement": "A sensor recorded `n` readings `a[1], a[2], ..., a[n]` in this order, and you are given a tolerance `d`.\n\nA *stretch* is one or more consecutive readings `a[l], a[l+1], ..., a[r]` (`1 ≤ l ≤ r ≤ n`). A stretch is *calm* if every two neighbouring readings inside it differ by at most `d`, that is, `|a[i] - a[i+1]| ≤ d` for every `i` with `l ≤ i < r`. A stretch of one reading is always calm.\n\nFind the length (the number of readings, `r - l + 1`) of the longest calm stretch.",
+      "inputFormat": "Line 1: two integers `n` and `d`, separated by a single space.\nLine 2: `n` integers `a[1] ... a[n]`, separated by single spaces.",
+      "outputFormat": "Print one integer: the length of the longest calm stretch.",
+      "constraints": "1 ≤ n ≤ 200000\n0 ≤ d ≤ 2000000000\n-1000000000 ≤ a[i] ≤ 1000000000",
+      "samples": [
+        {
+          "input": "7 2\n5 -1 1 3 2 10 12\n",
+          "output": "4",
+          "explanation": "Neighbour differences are 6, 2, 2, 1, 8, 2. The differences 6 and 8 are larger than d = 2, so they split the readings into the calm stretches [5], [-1 1 3 2] and [10 12]. The longest has 4 readings. Answer: 4."
+        },
+        {
+          "input": "5 0\n4 4 4 9 9\n",
+          "output": "3",
+          "explanation": "With d = 0 neighbours must be equal. The calm stretches are [4 4 4] and [9 9]. Answer: 3."
+        }
+      ],
+      "code": "",
+      "serverTime": "2026-11-12T16:00:01.706Z"
+    }
+  },
+  "openQ2": {
+    "status": 200,
+    "body": {
+      "index": 2,
+      "title": "Rising Substrings",
+      "topic": "strings",
+      "difficulty": "medium",
+      "statement": "You are given a string `s` of lowercase letters, with positions numbered from 1.\n\nA substring `s[i..j]` with `i < j` (so it has at least two letters) is *rising* if its first letter `s[i]` comes strictly earlier in the alphabet than its last letter `s[j]`. The letters between them do not matter. Substrings at different positions are counted separately, even if they are equal as text.\n\nCount the rising substrings.",
+      "inputFormat": "Line 1: the string `s`.",
+      "outputFormat": "Print one integer: the number of rising substrings. If there are none, print `0`.",
+      "constraints": "1 ≤ |s| ≤ 200000\n`s` contains only lowercase English letters `a` to `z`.",
+      "samples": [
+        {
+          "input": "abca\n",
+          "output": "3",
+          "explanation": "The rising substrings are ab (a < b), abc (a < c) and bc (b < c). The substrings abca, bca and ca are not rising, because their first letter is not earlier than their last. Answer: 3."
+        },
+        {
+          "input": "zzz\n",
+          "output": "0",
+          "explanation": "Every substring starts and ends with z, and z is not earlier than z. Answer: 0."
+        },
+        {
+          "input": "cab\n",
+          "output": "1",
+          "explanation": "Only ab is rising. ca and cab start with c, which is not earlier than a or b. Answer: 1."
+        }
+      ],
+      "code": "",
+      "serverTime": "2026-11-12T16:00:01.708Z"
+    }
+  },
+  "openQ9": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Question not found"
+      }
+    }
+  },
+  "saveOk": {
+    "status": 204,
+    "body": null
+  },
+  "openQ1AfterSave": {
+    "status": 200,
+    "body": {
+      "index": 1,
+      "title": "Longest Calm Stretch",
+      "topic": "arrays",
+      "difficulty": "easy",
+      "statement": "A sensor recorded `n` readings `a[1], a[2], ..., a[n]` in this order, and you are given a tolerance `d`.\n\nA *stretch* is one or more consecutive readings `a[l], a[l+1], ..., a[r]` (`1 ≤ l ≤ r ≤ n`). A stretch is *calm* if every two neighbouring readings inside it differ by at most `d`, that is, `|a[i] - a[i+1]| ≤ d` for every `i` with `l ≤ i < r`. A stretch of one reading is always calm.\n\nFind the length (the number of readings, `r - l + 1`) of the longest calm stretch.",
+      "inputFormat": "Line 1: two integers `n` and `d`, separated by a single space.\nLine 2: `n` integers `a[1] ... a[n]`, separated by single spaces.",
+      "outputFormat": "Print one integer: the length of the longest calm stretch.",
+      "constraints": "1 ≤ n ≤ 200000\n0 ≤ d ≤ 2000000000\n-1000000000 ≤ a[i] ≤ 1000000000",
+      "samples": [
+        {
+          "input": "7 2\n5 -1 1 3 2 10 12\n",
+          "output": "4",
+          "explanation": "Neighbour differences are 6, 2, 2, 1, 8, 2. The differences 6 and 8 are larger than d = 2, so they split the readings into the calm stretches [5], [-1 1 3 2] and [10 12]. The longest has 4 readings. Answer: 4."
+        },
+        {
+          "input": "5 0\n4 4 4 9 9\n",
+          "output": "3",
+          "explanation": "With d = 0 neighbours must be equal. The calm stretches are [4 4 4] and [9 9]. Answer: 3."
+        }
+      ],
+      "code": "print(\"saved\")\n",
+      "serverTime": "2026-11-12T16:00:01.712Z"
+    }
+  },
+  "saveTooLarge": {
+    "status": 413,
+    "body": {
+      "error": {
+        "code": "CODE_TOO_LARGE",
+        "message": "Code can be at most 51200 characters"
+      }
+    }
+  },
+  "saveExactLimit": {
+    "status": 204,
+    "body": null
+  },
+  "getActiveAfterOpen": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8f8e",
+      "status": "ACTIVE",
+      "durationMin": 5,
+      "createdAt": "2026-11-12T16:00:01.697Z",
+      "startedAt": "2026-11-12T16:00:01.699Z",
+      "deadline": "2026-11-12T16:05:01.699Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T16:00:01.715Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "clockAhead": {
+    "offsetMs": 302000
+  },
+  "saveExpired": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_EXPIRED",
+        "message": "The round has ended because its time ran out"
+      }
+    }
+  },
+  "openExpired": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_EXPIRED",
+        "message": "The round has ended because its time ran out"
+      }
+    }
+  },
+  "getExpired": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8f8e",
+      "status": "FINISHED",
+      "durationMin": 5,
+      "createdAt": "2026-11-12T16:00:01.697Z",
+      "startedAt": "2026-11-12T16:00:01.699Z",
+      "deadline": "2026-11-12T16:05:01.699Z",
+      "finishedAt": "2026-11-12T16:05:01.699Z",
+      "finishReason": "EXPIRED",
+      "serverTime": "2026-11-12T16:05:03.719Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "finishExpired": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8f8e",
+      "status": "FINISHED",
+      "durationMin": 5,
+      "createdAt": "2026-11-12T16:00:01.697Z",
+      "startedAt": "2026-11-12T16:00:01.699Z",
+      "deadline": "2026-11-12T16:05:01.699Z",
+      "finishedAt": "2026-11-12T16:05:01.699Z",
+      "finishReason": "EXPIRED",
+      "serverTime": "2026-11-12T16:05:03.720Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "openManual": {
+    "status": 200,
+    "body": {
+      "index": 1,
+      "title": "Light Switches",
+      "topic": "hashing",
+      "difficulty": "easy",
+      "statement": "A hall has many lights, and each light has its own switch number. All lights start off. You are given the list of switches that were pressed, in order. Each press flips that switch's light: off becomes on, and on becomes off.\n\nPrint the switch numbers of the lights that are on after all presses.",
+      "inputFormat": "Line 1: one integer `n`, the number of presses.\nLine 2: `n` integers `b[1] ... b[n]`, the switch numbers pressed, separated by single spaces.",
+      "outputFormat": "Print the switch numbers of the lights that are on, in increasing numeric order, on one line separated by single spaces. If no light is on, print `NONE`.",
+      "constraints": "1 ≤ n ≤ 5000\n1 ≤ b[i] ≤ 1000000000",
+      "samples": [
+        {
+          "input": "6\n12 5 12 8 30 5\n",
+          "output": "8 30",
+          "explanation": "Switches 12 and 5 are pressed twice each, so their lights end off. Switches 8 and 30 are pressed once each, so their lights end on. Answer: 8 30."
+        },
+        {
+          "input": "4\n3 3 6 6\n",
+          "output": "NONE",
+          "explanation": "Every switch is pressed twice, so every light ends off. Answer: NONE."
+        }
+      ],
+      "code": "",
+      "serverTime": "2026-11-12T16:00:01.725Z"
+    }
+  },
+  "finishManual": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8fc0",
+      "status": "FINISHED",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T16:00:01.723Z",
+      "startedAt": "2026-11-12T16:00:01.724Z",
+      "deadline": "2026-11-12T16:12:01.724Z",
+      "finishedAt": "2026-11-12T16:00:01.727Z",
+      "finishReason": "MANUAL",
+      "serverTime": "2026-11-12T16:00:01.727Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "hashing",
+          "difficulty": "easy",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "finishManualAgain": {
+    "status": 200,
+    "body": {
+      "id": "6af5e2816bc75038a80b8fc0",
+      "status": "FINISHED",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T16:00:01.723Z",
+      "startedAt": "2026-11-12T16:00:01.724Z",
+      "deadline": "2026-11-12T16:12:01.724Z",
+      "finishedAt": "2026-11-12T16:00:01.727Z",
+      "finishReason": "MANUAL",
+      "serverTime": "2026-11-12T16:00:01.728Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "hashing",
+          "difficulty": "easy",
+          "opened": true,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "openAfterManualFinish": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_ACTIVE",
+        "message": "The round is finished"
+      }
+    }
+  },
+  "saveAfterManualFinish": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_ACTIVE",
+        "message": "The round is finished"
+      }
+    }
+  },
+  "_metaF4": {
+    "note": "F4 responses captured from the real backend code (seeded in-memory MongoDB, controllable clock).",
+    "capturedAt": "2026-11-12T16:00:01.730Z"
+  }
+}

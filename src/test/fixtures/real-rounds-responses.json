@@ -1,0 +1,1047 @@
+{
+  "topics": {
+    "status": 200,
+    "body": {
+      "topics": [
+        {
+          "topic": "arrays",
+          "easy": 1,
+          "medium": 1,
+          "hard": 1
+        },
+        {
+          "topic": "strings",
+          "easy": 1,
+          "medium": 1,
+          "hard": 1
+        },
+        {
+          "topic": "hashing",
+          "easy": 1,
+          "medium": 1,
+          "hard": 1
+        },
+        {
+          "topic": "sorting",
+          "easy": 1,
+          "medium": 1,
+          "hard": 1
+        },
+        {
+          "topic": "math",
+          "easy": 1,
+          "medium": 1,
+          "hard": 1
+        }
+      ]
+    }
+  },
+  "createRound422OneGroup": {
+    "status": 422,
+    "body": {
+      "error": {
+        "code": "NOT_ENOUGH_PROBLEMS",
+        "message": "There are not enough problems for some questions",
+        "details": [
+          {
+            "slots": [
+              1,
+              2
+            ],
+            "topic": "arrays",
+            "difficulty": "easy",
+            "requested": 2,
+            "available": 1
+          }
+        ]
+      }
+    }
+  },
+  "createRound422TwoGroups": {
+    "status": 422,
+    "body": {
+      "error": {
+        "code": "NOT_ENOUGH_PROBLEMS",
+        "message": "There are not enough problems for some questions",
+        "details": [
+          {
+            "slots": [
+              1,
+              3
+            ],
+            "topic": "arrays",
+            "difficulty": "easy",
+            "requested": 2,
+            "available": 1
+          },
+          {
+            "slots": [
+              2,
+              4
+            ],
+            "topic": "arrays",
+            "difficulty": "medium",
+            "requested": 2,
+            "available": 1
+          }
+        ]
+      }
+    }
+  },
+  "createRoundValidationDuration": {
+    "status": 400,
+    "body": {
+      "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "Invalid input",
+        "details": [
+          {
+            "field": "body.durationMin",
+            "message": "Number must be less than or equal to 180"
+          }
+        ]
+      }
+    }
+  },
+  "createRoundValidationSlots": {
+    "status": 400,
+    "body": {
+      "error": {
+        "code": "VALIDATION_ERROR",
+        "message": "Invalid input",
+        "details": [
+          {
+            "field": "body.slots.0.topic",
+            "message": "must be one of: arrays, strings, hashing, sorting, math"
+          }
+        ]
+      }
+    }
+  },
+  "createRoundOk": {
+    "status": 201,
+    "body": {
+      "id": "6af5bc384e85caf4810f86e1",
+      "status": "READY",
+      "durationMin": 62,
+      "createdAt": "2026-11-12T13:16:40.062Z",
+      "startedAt": null,
+      "deadline": null,
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T13:16:40.062Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "arrays",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 3,
+          "topic": "arrays",
+          "difficulty": "hard",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "startRound": {
+    "status": 200,
+    "body": {
+      "id": "6af5bc384e85caf4810f86e1",
+      "status": "ACTIVE",
+      "durationMin": 62,
+      "createdAt": "2026-11-12T13:16:40.062Z",
+      "startedAt": "2026-11-12T13:16:40.064Z",
+      "deadline": "2026-11-12T14:18:40.064Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T13:16:40.064Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "arrays",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 3,
+          "topic": "arrays",
+          "difficulty": "hard",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "finishRound": {
+    "status": 200,
+    "body": {
+      "id": "6af5bc384e85caf4810f86e1",
+      "status": "FINISHED",
+      "durationMin": 62,
+      "createdAt": "2026-11-12T13:16:40.062Z",
+      "startedAt": "2026-11-12T13:16:40.064Z",
+      "deadline": "2026-11-12T14:18:40.064Z",
+      "finishedAt": "2026-11-12T13:16:40.067Z",
+      "finishReason": "MANUAL",
+      "serverTime": "2026-11-12T13:16:40.067Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "arrays",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 3,
+          "topic": "arrays",
+          "difficulty": "hard",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "createRoundOneEasy": {
+    "status": 201,
+    "body": {
+      "id": "6af5bc384e85caf4810f86ee",
+      "status": "READY",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T13:16:40.070Z",
+      "startedAt": null,
+      "deadline": null,
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T13:16:40.070Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "listAllLimit1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f873a",
+          "status": "READY",
+          "durationMin": 23,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.094Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 1,
+      "total": 14
+    }
+  },
+  "listReadyLimit1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f873a",
+          "status": "READY",
+          "durationMin": 23,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.094Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 1,
+      "total": 12
+    }
+  },
+  "listActiveLimit1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f86ee",
+          "status": "ACTIVE",
+          "durationMin": 12,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.070Z",
+          "startedAt": "2026-11-12T13:16:40.071Z",
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 1,
+      "total": 1
+    }
+  },
+  "listFinishedLimit1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f86e1",
+          "status": "FINISHED",
+          "durationMin": 62,
+          "questionCount": 3,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.062Z",
+          "startedAt": "2026-11-12T13:16:40.064Z",
+          "finishedAt": "2026-11-12T13:16:40.067Z",
+          "finishReason": "MANUAL"
+        }
+      ],
+      "page": 1,
+      "limit": 1,
+      "total": 1
+    }
+  },
+  "listRecent": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f873a",
+          "status": "READY",
+          "durationMin": 23,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.094Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8734",
+          "status": "READY",
+          "durationMin": 22,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.092Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f872e",
+          "status": "READY",
+          "durationMin": 21,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.091Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8728",
+          "status": "READY",
+          "durationMin": 20,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.089Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8722",
+          "status": "READY",
+          "durationMin": 19,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.087Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 5,
+      "total": 14
+    }
+  },
+  "listAllPage1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f873a",
+          "status": "READY",
+          "durationMin": 23,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.094Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8734",
+          "status": "READY",
+          "durationMin": 22,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.092Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f872e",
+          "status": "READY",
+          "durationMin": 21,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.091Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8728",
+          "status": "READY",
+          "durationMin": 20,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.089Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8722",
+          "status": "READY",
+          "durationMin": 19,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.087Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f871c",
+          "status": "READY",
+          "durationMin": 18,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.085Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8716",
+          "status": "READY",
+          "durationMin": 17,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.084Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8710",
+          "status": "READY",
+          "durationMin": 16,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.082Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f870a",
+          "status": "READY",
+          "durationMin": 15,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.080Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8704",
+          "status": "READY",
+          "durationMin": 14,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.078Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 10,
+      "total": 14
+    }
+  },
+  "listAllPage2": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f86fe",
+          "status": "READY",
+          "durationMin": 13,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.076Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f86f8",
+          "status": "READY",
+          "durationMin": 12,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.074Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f86ee",
+          "status": "ACTIVE",
+          "durationMin": 12,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.070Z",
+          "startedAt": "2026-11-12T13:16:40.071Z",
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f86e1",
+          "status": "FINISHED",
+          "durationMin": 62,
+          "questionCount": 3,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.062Z",
+          "startedAt": "2026-11-12T13:16:40.064Z",
+          "finishedAt": "2026-11-12T13:16:40.067Z",
+          "finishReason": "MANUAL"
+        }
+      ],
+      "page": 2,
+      "limit": 10,
+      "total": 14
+    }
+  },
+  "listReadyPage1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f873a",
+          "status": "READY",
+          "durationMin": 23,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.094Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8734",
+          "status": "READY",
+          "durationMin": 22,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.092Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f872e",
+          "status": "READY",
+          "durationMin": 21,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.091Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8728",
+          "status": "READY",
+          "durationMin": 20,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.089Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8722",
+          "status": "READY",
+          "durationMin": 19,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.087Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f871c",
+          "status": "READY",
+          "durationMin": 18,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.085Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8716",
+          "status": "READY",
+          "durationMin": 17,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.084Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8710",
+          "status": "READY",
+          "durationMin": 16,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.082Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f870a",
+          "status": "READY",
+          "durationMin": 15,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.080Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        },
+        {
+          "id": "6af5bc384e85caf4810f8704",
+          "status": "READY",
+          "durationMin": 14,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.078Z",
+          "startedAt": null,
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 10,
+      "total": 12
+    }
+  },
+  "listFinishedPage1": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5bc384e85caf4810f86e1",
+          "status": "FINISHED",
+          "durationMin": 62,
+          "questionCount": 3,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T13:16:40.062Z",
+          "startedAt": "2026-11-12T13:16:40.064Z",
+          "finishedAt": "2026-11-12T13:16:40.067Z",
+          "finishReason": "MANUAL"
+        }
+      ],
+      "page": 1,
+      "limit": 10,
+      "total": 1
+    }
+  },
+  "getRoundActive": {
+    "status": 200,
+    "body": {
+      "id": "6af5bc384e85caf4810f86ee",
+      "status": "ACTIVE",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T13:16:40.070Z",
+      "startedAt": "2026-11-12T13:16:40.071Z",
+      "deadline": "2026-11-12T13:28:40.071Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T13:16:40.107Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "getRoundReady": {
+    "status": 200,
+    "body": {
+      "id": "6af5bc384e85caf4810f86f8",
+      "status": "READY",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T13:16:40.074Z",
+      "startedAt": null,
+      "deadline": null,
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T13:16:40.108Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "deleteNotReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_READY",
+        "message": "Only a round that has not been started can be deleted"
+      }
+    }
+  },
+  "deleteNotFound": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Round not found"
+      }
+    }
+  },
+  "deleteOk": {
+    "status": 204,
+    "body": null
+  },
+  "createRoundReadyLimit": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "READY_LIMIT_REACHED",
+        "message": "You already have 20 rounds that have not been started. Start or delete one first."
+      }
+    }
+  },
+  "_meta": {
+    "note": "Captured from the real backend code (seeded in-memory MongoDB).",
+    "capturedAt": "2026-11-12T13:16:40.189Z",
+    "state": "Main user at list time: 14 rounds (1 FINISHED manual, 1 ACTIVE, 12 READY)."
+  },
+  "getRoundReady3": {
+    "status": 200,
+    "body": {
+      "id": "6af5cfcc75136df10ae92cc4",
+      "status": "READY",
+      "durationMin": 62,
+      "createdAt": "2026-11-12T14:40:12.647Z",
+      "startedAt": null,
+      "deadline": null,
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T14:40:12.649Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "arrays",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 2,
+          "topic": "strings",
+          "difficulty": "medium",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        },
+        {
+          "index": 3,
+          "topic": "math",
+          "difficulty": "hard",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "startForDeadline": {
+    "status": 200,
+    "body": {
+      "id": "6af5cfcc75136df10ae92ccc",
+      "status": "ACTIVE",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T14:40:12.653Z",
+      "startedAt": "2026-11-12T14:40:12.657Z",
+      "deadline": "2026-11-12T14:52:12.657Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T14:40:12.657Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "hashing",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "getAfterStartForDeadline": {
+    "status": 200,
+    "body": {
+      "id": "6af5cfcc75136df10ae92ccc",
+      "status": "ACTIVE",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T14:40:12.653Z",
+      "startedAt": "2026-11-12T14:40:12.657Z",
+      "deadline": "2026-11-12T14:52:12.657Z",
+      "finishedAt": null,
+      "finishReason": null,
+      "serverTime": "2026-11-12T14:40:12.660Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "hashing",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "startRoundNotReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_READY",
+        "message": "This round has already been started"
+      }
+    }
+  },
+  "startRoundActiveExists": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ACTIVE_ROUND_EXISTS",
+        "message": "You already have an active round. Finish it before starting another."
+      }
+    }
+  },
+  "listActiveForExists": {
+    "status": 200,
+    "body": {
+      "items": [
+        {
+          "id": "6af5cfcc75136df10ae92ccc",
+          "status": "ACTIVE",
+          "durationMin": 12,
+          "questionCount": 1,
+          "solvedCount": 0,
+          "createdAt": "2026-11-12T14:40:12.653Z",
+          "startedAt": "2026-11-12T14:40:12.657Z",
+          "finishedAt": null,
+          "finishReason": null
+        }
+      ],
+      "page": 1,
+      "limit": 1,
+      "total": 1
+    }
+  },
+  "deleteRoundNotReady": {
+    "status": 409,
+    "body": {
+      "error": {
+        "code": "ROUND_NOT_READY",
+        "message": "Only a round that has not been started can be deleted"
+      }
+    }
+  },
+  "finishForFinished": {
+    "status": 200,
+    "body": {
+      "id": "6af5cfcc75136df10ae92ccc",
+      "status": "FINISHED",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T14:40:12.653Z",
+      "startedAt": "2026-11-12T14:40:12.657Z",
+      "deadline": "2026-11-12T14:52:12.657Z",
+      "finishedAt": "2026-11-12T14:40:12.671Z",
+      "finishReason": "MANUAL",
+      "serverTime": "2026-11-12T14:40:12.671Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "hashing",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "getRoundFinished": {
+    "status": 200,
+    "body": {
+      "id": "6af5cfcc75136df10ae92ccc",
+      "status": "FINISHED",
+      "durationMin": 12,
+      "createdAt": "2026-11-12T14:40:12.653Z",
+      "startedAt": "2026-11-12T14:40:12.657Z",
+      "deadline": "2026-11-12T14:52:12.657Z",
+      "finishedAt": "2026-11-12T14:40:12.671Z",
+      "finishReason": "MANUAL",
+      "serverTime": "2026-11-12T14:40:12.672Z",
+      "slots": [
+        {
+          "index": 1,
+          "topic": "hashing",
+          "difficulty": "easy",
+          "opened": false,
+          "solved": false,
+          "runCount": 0,
+          "submitCount": 0
+        }
+      ]
+    }
+  },
+  "getRoundNotFound": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Round not found"
+      }
+    }
+  },
+  "getRoundBadId": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Not found"
+      }
+    }
+  },
+  "startRoundNotFound": {
+    "status": 404,
+    "body": {
+      "error": {
+        "code": "NOT_FOUND",
+        "message": "Round not found"
+      }
+    }
+  },
+  "_metaF3": {
+    "note": "F3 responses captured from the real backend code (seeded in-memory MongoDB).",
+    "capturedAt": "2026-11-12T14:40:12.675Z"
+  }
+}

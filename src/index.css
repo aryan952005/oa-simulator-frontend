@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+  }
+
+  body {
+    @apply bg-surface text-on-surface font-body-md text-body-md antialiased;
+  }
+
+  /* DESIGN.md, Input Fields: a warm focus ring. No blue focus rings.
+     It is important so that an element with a shadow of its own (the active sidebar link, the chosen
+     question tab) still shows it when it has keyboard focus. */
+  :focus-visible {
+    outline: none;
+    @apply !shadow-focus-ring;
+  }
+}
+
+/* DESIGN.md: Material Symbols Outlined for icons */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400;
+}
